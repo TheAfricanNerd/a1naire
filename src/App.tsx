@@ -28,7 +28,7 @@ function App() {
 
 
         <div className=''>
-          <img className="w-full md:h-[100vh] h-[100vh] object-cover md:object-[50%] object-[68%]" alt="background car image" src={CAR_INTERIOR}/>
+          <img className="w-full md:h-[100vh] h-[100vh] object-cover md:object-[50%] object-[84%]" alt="background car image" src={CAR_INTERIOR}/>
         </div>
      </motion.section>
     </>

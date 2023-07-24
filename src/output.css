@@ -845,6 +845,11 @@ video {
      object-position: 72%;
 }
 
+.object-\[84\%\] {
+  -o-object-position: 84%;
+     object-position: 84%;
+}
+
 .text-center {
   text-align: center;
 }
