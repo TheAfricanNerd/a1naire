@@ -1,4 +1,5 @@
 
+import { Variants } from "framer-motion";
 import { USDRATE } from "./constants";
 
 // truncate text
@@ -47,11 +48,11 @@ export const CHILD_ANIMATION = (props:More = {}) => {
 
 interface More extends AnimationType {
   type?: string;
-  delayChild?: number | string;
-  staggerChild?: number | string;
+  delayChild?: number | undefined;
+  staggerChild?: number | undefined;
 }
 
-export const PARENT_ANIMATION = (props:More = {}) => {
+export const PARENT_ANIMATION = (props:More = {}):Variants => {
 
   return {
     hidden: { opacity: 0, scale: 1, y: props.yStart ?? 100 },
