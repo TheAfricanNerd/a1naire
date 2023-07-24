@@ -610,6 +610,10 @@ video {
   height: auto;
 }
 
+.max-h-\[100vh\] {
+  max-height: 100vh;
+}
+
 .w-1 {
   width: 0.25rem;
 }
@@ -648,6 +652,10 @@ video {
 
 .w-\[200\%\] {
   width: 200%;
+}
+
+.w-\[80\%\] {
+  width: 80%;
 }
 
 .border-collapse {
@@ -714,8 +722,18 @@ video {
   gap: 2.5rem;
 }
 
+.gap-6 {
+  gap: 1.5rem;
+}
+
 .overflow-hidden {
   overflow: hidden;
+}
+
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .border {
@@ -752,6 +770,46 @@ video {
      object-fit: cover;
 }
 
+.object-right {
+  -o-object-position: right;
+     object-position: right;
+}
+
+.object-\[20\%\] {
+  -o-object-position: 20%;
+     object-position: 20%;
+}
+
+.object-\[-20\%\] {
+  -o-object-position: -20%;
+     object-position: -20%;
+}
+
+.object-\[50\%\] {
+  -o-object-position: 50%;
+     object-position: 50%;
+}
+
+.object-\[100\%\] {
+  -o-object-position: 100%;
+     object-position: 100%;
+}
+
+.object-\[70\%\] {
+  -o-object-position: 70%;
+     object-position: 70%;
+}
+
+.object-\[80\%\] {
+  -o-object-position: 80%;
+     object-position: 80%;
+}
+
+.object-\[75\%\] {
+  -o-object-position: 75%;
+     object-position: 75%;
+}
+
 .text-center {
   text-align: center;
 }
@@ -759,6 +817,16 @@ video {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-semibold {
@@ -776,6 +844,18 @@ video {
 
 .outline {
   outline-style: solid;
+}
+
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 @media (min-width: 768px) {
@@ -797,5 +877,14 @@ video {
 
   .md\:w-1\/2 {
     width: 50%;
+  }
+
+  .md\:w-2\/3 {
+    width: 66.666667%;
+  }
+
+  .md\:object-\[50\%\] {
+    -o-object-position: 50%;
+       object-position: 50%;
   }
 }
