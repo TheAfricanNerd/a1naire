@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import './app.css';
 import CAR_INTERIOR from './assets/images/jpg/car_interior.jpeg';
 import LOGO from './assets/images/png/a1naire-logo.png';
