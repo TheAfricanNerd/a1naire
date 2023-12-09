@@ -1,6 +1,8 @@
+import React from "react";
+
 interface ISlide {
   id: number;
-  h2: string;
+  h2: React.ReactNode;
   p: string;
 }
 
@@ -22,7 +24,11 @@ const data: Array<ISlide> = [
   },
   {
     id: 4,
-    h2: "Coming Early 2024",
+    h2: (
+      <p>
+        Coming <br /> Early 2024
+      </p>
+    ),
     p: "some Paragraph text",
   },
 ];

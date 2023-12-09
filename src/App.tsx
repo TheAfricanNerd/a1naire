@@ -21,7 +21,7 @@ function App() {
     dots: true,
     infinite: true,
     speed: 500,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 8000,
     slidesToShow: 1,
     autoplay: true,
     arrows: false,
@@ -45,7 +45,11 @@ function App() {
               shadow-2xl shadow-black
             "
           >
-            <div className="absolute bg-black w-full h-full bg-opacity-40"></div>
+            {isMobile ? (
+              <div className="absolute  bg-black w-full h-full bg-opacity-40"></div>
+            ) : (
+              ""
+            )}
 
             <video
               className="object-cover h-full"
