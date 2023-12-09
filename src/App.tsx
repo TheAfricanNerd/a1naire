@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import "./app.css";
 // import CAR_INTERIOR from "./assets/images/jpg/car_interior.jpeg";
-// import LOGO from "./assets/images/png/a1naire-logo.png";
+import LOGO from "./assets/images/png/a1naire-logo.png";
 import LOGO_BLACK from "./assets/images/png/a1naire-logo-black.png";
 import ENVELOP from "./assets/images/svg/envelop-black.svg";
 import { CHILD_ANIMATION, PARENT_ANIMATION } from "./utils";
@@ -11,8 +11,11 @@ import data from "./data";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Button, { Outline } from "./button";
+import { Link } from "react-router-dom";
+import useMedia from "./hook/useMedia";
 
 function App() {
+  const isMobile = useMedia().isMobile;
   // this is two
   const settings = {
     dots: true,
@@ -36,7 +39,9 @@ function App() {
           {/* video section */}
           <motion.div
             variants={CHILD_ANIMATION()}
-            className="left w-full md:w-[420px] md:rounded-2xl overflow-hidden border-none object-cover md:h-auto h-[100svh] absolute md:relative"
+            className="left w-full md:w-[420px] md:rounded-2xl overflow-hidden border-none object-cover md:h-auto h-[100svh] absolute md:relative
+              shadow-2xl shadow-black
+            "
           >
             <div className="absolute bg-black w-full h-full bg-opacity-40"></div>
 
@@ -57,7 +62,7 @@ function App() {
               className="carosel-text text-center"
             >
               <img
-                src={LOGO_BLACK}
+                src={isMobile ? LOGO : LOGO_BLACK}
                 alt={"black logo"}
                 className="mx-auto my-10"
                 width={200}
@@ -73,15 +78,18 @@ function App() {
               </Slider>
 
               <div className="buttons flex flex-col items-center mt-7 md:w-1/2 w-full mx-auto">
-                <Button dark hancleClick={() => {}}>
-                  Join the Waitlist
-                </Button>
-                <div className="w-full">
-                  <Outline color="white" hancleClick={() => {}}>
+                <Link
+                  to={"https://getwaitlist.com/waitlist/11137"}
+                  className="w-full"
+                >
+                  <Button dark>Join the Waitlist</Button>
+                </Link>
+                <Link to={"mailto:discover@a1naire.com"} className="w-full">
+                  <Outline color="white">
                     <img src={ENVELOP} alt="envelop" />
                     Contact us
                   </Outline>
-                </div>
+                </Link>
               </div>
             </motion.div>
           </div>

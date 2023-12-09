@@ -1,6 +1,6 @@
 interface IButton {
   label?: string;
-  hancleClick: () => void;
+  hancleClick?: () => void;
   children: React.ReactNode;
   icon?: string;
   color?: string;
