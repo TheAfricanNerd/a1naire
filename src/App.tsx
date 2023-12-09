@@ -55,6 +55,7 @@ function App() {
               className="object-cover h-full"
               src={Video}
               autoPlay={true}
+              width={"100%"}
               playsInline
               loop
               muted
