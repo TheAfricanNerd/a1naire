@@ -56,15 +56,15 @@ function App() {
               variants={CHILD_ANIMATION({ delayChild: 1.3 })}
               className="carosel-text text-center"
             >
+              <img
+                src={LOGO_BLACK}
+                alt={"black logo"}
+                className="mx-auto my-10"
+                width={200}
+              />
               <Slider {...settings}>
                 {data.map((item) => (
                   <div key={item.id}>
-                    <img
-                      src={LOGO_BLACK}
-                      alt={"black logo"}
-                      className="mx-auto my-10"
-                      width={200}
-                    />
                     <h2 className="text-white md:text-black text-2xl md:text-4xl w-[100%] md:w-2/3 mx-auto my-5">
                       {item.h2}
                     </h2>
