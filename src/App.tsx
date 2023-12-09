@@ -21,9 +21,11 @@ function App() {
     dots: true,
     infinite: true,
     speed: 500,
+    autoplaySpeed: 5000,
     slidesToShow: 1,
     autoplay: true,
     arrows: false,
+    dotsClass: isMobile ? "mobile-dots" : "desktop-dots",
   };
   //  this is one
 
@@ -48,7 +50,8 @@ function App() {
             <video
               className="object-cover h-full"
               src={Video}
-              autoPlay
+              autoPlay={true}
+              playsInline
               loop
               muted
             />
