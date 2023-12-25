@@ -90,11 +90,13 @@ function App() {
                   to={"https://getwaitlist.com/waitlist/11137"}
                   className="w-full"
                 >
-                  <Button dark>Join the Waitlist</Button>
+                  <Button dark isLarge>
+                    Join The Waitlist For an Exclusive Reveal
+                  </Button>
                 </Link>
                 <Link to={"mailto:discover@a1naire.com"} className="w-full">
-                  <Outline color="white">
-                    <img src={ENVELOP} alt="envelop" />
+                  <Outline color="white" isSmall={true}>
+                    <img src={ENVELOP} alt="envelop" width={"20px"} />
                     Contact us
                   </Outline>
                 </Link>
