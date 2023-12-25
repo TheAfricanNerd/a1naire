@@ -95,7 +95,7 @@ function App() {
                   </Button>
                 </Link>
                 <Link to={"mailto:discover@a1naire.com"} className="w-full">
-                  <Outline color="white" isSmall={true}>
+                  <Outline color="white" isSmall={true} hug={true}>
                     <img src={ENVELOP} alt="envelop" width={"20px"} />
                     Contact us
                   </Outline>

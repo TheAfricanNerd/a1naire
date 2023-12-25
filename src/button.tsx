@@ -7,6 +7,7 @@ interface IButton {
   dark?: boolean;
   isSmall?: boolean;
   isLarge?: boolean;
+  hug?: boolean;
 }
 
 const Button = ({ hancleClick, children, dark, isLarge }: IButton) => {
@@ -24,13 +25,20 @@ const Button = ({ hancleClick, children, dark, isLarge }: IButton) => {
   );
 };
 
-export const Outline = ({ hancleClick, children, dark, isSmall }: IButton) => {
+export const Outline = ({
+  hancleClick,
+  children,
+  dark,
+  isSmall,
+  hug,
+}: IButton) => {
   return (
     <div
-      className={`my-2 flex gap-2 px-12 py-3 w-full justify-center items-center md:border-slate-900 border-white border-2 ${
+      className={`my-2 flex gap-2 py-3 mx-auto justify-center items-center md:border-slate-900 border-white border-2 ${
         dark ? " bg-black text-white " : "text-black bg-white"
       } rounded-xl cursor-pointer
       ${isSmall ? " text-xs" : ""}
+      ${hug ? "w-max  px-12" : "w-full  px-12"}
       `}
       onClick={hancleClick}
     >
