@@ -2,8 +2,18 @@
 export default {
   content: ["./src/**/*.{html,js,jsx,tsx,ts,css}"],
   theme: {
-    extend: {},
+    extend: {
+      width: {
+        mobile: "414px",
+        tablet: "601px",
+        desktop: "1080px",
+        myMobile: "95%",
+        largeDesktop: "1400px",
+      },
+      margin: {
+        standard: "4%",
+      },
+    },
   },
   plugins: [],
-}
-
+};

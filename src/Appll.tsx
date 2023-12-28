@@ -5,7 +5,7 @@ import LOGO from "./assets/images/png/a1naire-logo.png";
 import { CHILD_ANIMATION, PARENT_ANIMATION } from "./utils";
 import Video from "./assets/videos/bg_video.mp4";
 import Slider from "react-slick";
-import data from "./data";
+import data from "./components/header/data";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
