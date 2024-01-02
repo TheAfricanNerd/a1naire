@@ -960,7 +960,7 @@ video {
 }
 
 .bg-bg-image {
-  background-image: url('./src/assets/images/jpg/bg.jpg');
+  background-image: url('/src/assets/images/jpg/bg.jpg');
 }
 
 .object-cover {
@@ -996,14 +996,9 @@ video {
   padding-right: 3rem;
 }
 
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .py-20 {
@@ -1011,14 +1006,19 @@ video {
   padding-bottom: 5rem;
 }
 
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
 .py-40 {
   padding-top: 10rem;
   padding-bottom: 10rem;
 }
 
-.py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .text-left {
@@ -1227,11 +1227,6 @@ video {
   .md\:object-\[50\%\] {
     -o-object-position: 50%;
        object-position: 50%;
-  }
-
-  .md\:py-40 {
-    padding-top: 10rem;
-    padding-bottom: 10rem;
   }
 
   .md\:py-20 {

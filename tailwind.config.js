@@ -14,7 +14,7 @@ export default {
         standard: "4%",
       },
       backgroundImage: {
-        "bg-image": "url('./src/assets/images/jpg/bg.jpg')",
+        "bg-image": "url('/src/assets/images/jpg/bg.jpg')",
       },
     },
   },
