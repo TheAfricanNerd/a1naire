@@ -20,7 +20,7 @@ const Productivity = () => {
     autoplay: true,
     arrows: false,
     dotsClass: isMobile ? "mobile-dots" : "desktop-dots",
-    variableWidth: true,
+    variableWidth: !isMobile ?? true,
   };
 
   return (
@@ -32,7 +32,11 @@ const Productivity = () => {
           <div className="w-largeDesktop">
             <Slider {...Settings}>
               {data.slides.map((item) => (
-                <div key={item.id} className="p-4" style={{ width: 900 }}>
+                <div
+                  key={item.id}
+                  className="p-4"
+                  style={{ width: !isMobile ? 900 : 340 }}
+                >
                   <img
                     src={item.image.img}
                     alt={item.image.alt}

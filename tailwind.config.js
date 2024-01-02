@@ -13,6 +13,9 @@ export default {
       margin: {
         standard: "4%",
       },
+      backgroundImage: {
+        "bg-image": "url('./src/assets/images/jpg/bg.jpg')",
+      },
     },
   },
   plugins: [],

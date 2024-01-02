@@ -11,8 +11,16 @@ import openair3 from "./jpg/openair3.jpg";
 import productivity1 from "./jpg/productivity1.jpg";
 import productivity2 from "./jpg/productivity2.jpg";
 import productivity3 from "./jpg/productivity3.jpg";
+import manyrolls from "./jpg/many_rolls.jpg";
+import dynamicfreedom from "./jpg/unf.jpg";
+import paparazzi from "./jpg/paparazzi.jpg";
+import limited_additions from "./png/limited_additions.png";
+import paparazzi_icons from "./png/icons.png";
+import a1naire_rides from "./jpg/a1naireside.jpg";
+import other_rides1 from "./jpg/other-rides1.jpg";
+import other_rides2 from "./jpg/other-rides2.jpg";
 
-interface IImage {
+export interface IImage {
   img: string;
   alt: string;
 }
@@ -67,5 +75,41 @@ export const PROD2: IImage = {
 };
 export const PROD3: IImage = {
   img: productivity3,
+  alt: "productive person",
+};
+
+export const MANY_ROLLS: IImage = {
+  img: manyrolls,
   alt: "red ferrari",
+};
+export const DYNAMIC_FREEDOM: IImage = {
+  img: dynamicfreedom,
+  alt: "multiple luxry cars",
+};
+
+export const PAPARAZZI: IImage = {
+  img: paparazzi,
+  alt: "paparazzi media",
+};
+
+export const PAPARAZZI_ICONS: IImage = {
+  img: paparazzi_icons,
+  alt: "paparazzi icons",
+};
+
+export const LIMITED_ADDITIONS: IImage = {
+  img: limited_additions,
+  alt: "more luxry cars",
+};
+export const A1NAIRE_RIDES: IImage = {
+  img: a1naire_rides,
+  alt: "a1naire rides ",
+};
+export const OTHER_RIDES1: IImage = {
+  img: other_rides1,
+  alt: "more luxry cars",
+};
+export const OTHER_RIDES2: IImage = {
+  img: other_rides2,
+  alt: "more luxry cars",
 };
