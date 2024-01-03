@@ -35,7 +35,7 @@ const MyGallery = () => {
   return (
     <>
       <Section>
-        <div className="grid gap-0 md:gap-4 grid-cols-1 md:grid-cols-3 grid-rows-3 ">
+        <div className="grid gap-0 md:gap-4 grid-cols-1 md:grid-cols-3 grid-rows-3 md:w-largeDesktop w-mobile mx-auto">
           {images.map((image, index) => (
             <img key={index} src={image.img} alt={image.alt} />
           ))}
