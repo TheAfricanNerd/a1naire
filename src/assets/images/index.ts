@@ -20,6 +20,19 @@ import a1naire_rides from "./jpg/a1naireside.jpg";
 import other_rides1 from "./jpg/other-rides1.jpg";
 import other_rides2 from "./jpg/other-rides2.jpg";
 
+import one from "./jpg/cars/one.jpg";
+import two from "./jpg/cars/two.jpg";
+import three from "./jpg/cars/three.jpg";
+import four from "./jpg/cars/four.jpg";
+import five from "./jpg/cars/five.jpg";
+import six from "./jpg/cars/six.jpg";
+import seven from "./jpg/cars/seven.jpg";
+import eight from "./jpg/cars/eight.jpg";
+import nine from "./jpg/cars/nine.jpg";
+import ten from "./jpg/cars/ten.jpg";
+import eleven from "./jpg/cars/eleven.jpg";
+import twelve from "./jpg/cars/twelve.jpg";
+
 export interface IImage {
   img: string;
   alt: string;
@@ -111,5 +124,53 @@ export const OTHER_RIDES1: IImage = {
 };
 export const OTHER_RIDES2: IImage = {
   img: other_rides2,
+  alt: "more luxry cars",
+};
+export const ONE: IImage = {
+  img: one,
+  alt: "more luxry cars",
+};
+export const TWO: IImage = {
+  img: two,
+  alt: "more luxry cars",
+};
+export const THREE: IImage = {
+  img: three,
+  alt: "more luxry cars",
+};
+export const FOUR: IImage = {
+  img: four,
+  alt: "more luxry cars",
+};
+export const FIVE: IImage = {
+  img: five,
+  alt: "more luxry cars",
+};
+export const SIX: IImage = {
+  img: six,
+  alt: "more luxry cars",
+};
+export const SEVEN: IImage = {
+  img: seven,
+  alt: "more luxry cars",
+};
+export const EIGHT: IImage = {
+  img: eight,
+  alt: "more luxry cars",
+};
+export const NINE: IImage = {
+  img: nine,
+  alt: "more luxry cars",
+};
+export const TEN: IImage = {
+  img: ten,
+  alt: "more luxry cars",
+};
+export const ELEVEN: IImage = {
+  img: eleven,
+  alt: "more luxry cars",
+};
+export const TWELVE: IImage = {
+  img: twelve,
   alt: "more luxry cars",
 };

@@ -12,6 +12,7 @@ import PaparazziMedia from "../../components/PaparazziMedia";
 import LimitedAdditions from "../../components/LimitedAdditions";
 import UltraLuxryYouDeserve from "../../components/UltraLuxryYouDeserve";
 import MembershipCohort from "../../components/MembershipCohort";
+import MyGallery from "../../components/MyGallery";
 
 const index = () => {
   return (
@@ -31,6 +32,7 @@ const index = () => {
       <LimitedAdditions />
 
       {/* bottom section */}
+      <MyGallery />
       <MembershipCohort />
     </>
   );

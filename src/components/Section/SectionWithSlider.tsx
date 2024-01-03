@@ -25,12 +25,12 @@ const SectionWithSlider = ({
     dots: false,
     infinite: true,
     speed: 500,
-    autoplaySpeed: 8000,
+    autoplaySpeed: 5000,
     slidesToShow: 1,
     autoplay: true,
     arrows: false,
     dotsClass: isMobile ? "mobile-dots" : "desktop-dots",
-    variableWidth: !isMobile ?? true,
+    variableWidth: !isMobile ? false : false,
   };
 
   return (
@@ -40,18 +40,19 @@ const SectionWithSlider = ({
           <div className="w-auto mx-auto">
             <Title>{data?.title}</Title>
             {/* images section */}
-            <div className="w-largeDesktop">
+            <div className=" w-mobile md:w-largeDesktop">
               <Slider {...Settings}>
                 {data?.slides?.map((item) => (
                   <div
                     key={item.id}
-                    className="p-4"
-                    style={{ width: !isMobile ? 900 : 340 }}
+                    className="p-4 w-full "
+                    style={{ width: !isMobile ? 900 : 200 }}
                   >
                     <img
                       src={item?.image?.img}
                       alt={item?.image?.alt}
-                      className="w-full"
+                      className="w-full "
+                      style={{ width: !isMobile ? 900 : 200 }}
                     />
                   </div>
                 ))}
