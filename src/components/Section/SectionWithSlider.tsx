@@ -48,7 +48,8 @@ const SectionWithSlider = ({
     autoplay: true,
     arrows: false,
     dotsClass: isMobile ? "mobile-dots" : "desktop-dots",
-    variableWidth: !isMobile ?? true,
+    // variableWidth: !isMobile ?? true,
+    variableWidth: true,
   };
 
   return (
@@ -63,13 +64,13 @@ const SectionWithSlider = ({
                   <div
                     key={item.id}
                     className="p-4 w-full"
-                    style={{ width: !isMobile ? 900 : 380 }}
+                    style={{ width: !isMobile ? 900 : 320 }}
                   >
                     <img
                       src={item?.image?.img}
                       alt={item?.image?.alt}
                       className="w-full "
-                      style={{ width: !isMobile ? 900 : 380 }}
+                      style={{ width: !isMobile ? 900 : 320 }}
                     />
                   </div>
                 ))}
