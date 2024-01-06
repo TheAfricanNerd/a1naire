@@ -10,10 +10,14 @@ const MembershipCohort = () => {
   return (
     <>
       <div className=" bg-bg-image">
-        <div className="text-white flex flex-col items-center pt-20">
-          <img src={LOGO_WHITE.img} alt={LOGO_WHITE.alt} />
-          <Title>
-            <span className=" text-4xl">Early Adopters Membership Cohort</span>
+        <div className="text-white flex flex-col items-center pt-20 md:w-largeDesktop w-mobile mx-auto ">
+          <img
+            src={LOGO_WHITE.img}
+            alt={LOGO_WHITE.alt}
+            className="w-1/3 md:w-1/6"
+          />
+          <Title className="md:my-0 my-0">
+            <span className="text-4xl">Early Adopters Membership Cohort</span>
           </Title>
           <Title>
             <span className=" text-3xl">Accepting 10 Members</span>

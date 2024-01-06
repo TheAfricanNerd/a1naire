@@ -4,10 +4,10 @@ export default {
   theme: {
     extend: {
       width: {
-        mobile: "400px",
+        mobile: "380px",
         tablet: "601px",
         desktop: "1080px",
-        myMobile: "95%",
+        myMobile: "85%",
         largeDesktop: "1400px",
       },
       margin: {

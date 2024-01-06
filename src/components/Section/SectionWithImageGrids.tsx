@@ -21,34 +21,38 @@ const SectionWithImageGrids = ({ children, data, flex = false }: Props) => {
     children ?? (
       <>
         <Container flex={flex}>
-          <div className="w-auto mx-auto">
-            <Title>{data?.title}</Title>
+          <div className="w-auto ">
+            <Title className="text-left">{data?.title}</Title>
             {/* images section */}
-            <div className="flex justify-between items-end my-2">
+            <div className="flex w-full justify-between items-end my-2">
               {" "}
-              <h3 className=" text-xl md:text-4xl my-2 w-full md:w-1/3">
+              <h3 className=" text-xl md:text-2xl w-full md:text-left text-center md:w-1/3 my-2 mx-[7.5%] md:mx-0 border-[1px] border-slate-400 p-2 md:p-4 px-4 md:px-8 rounded-full">
                 Your Current {!isMobile ? <br /> : ""}
                 UberBlack Option
               </h3>
-              <h3 className="text-xl md:text-4xl text-right md:flex hidden w-full my-2">
+              <h3 className="text-xl md:text-2xl text-left md:flex hidden w-max my-2 mx-[7.5%] md:mx-0 border-[1px] border-slate-400 p-2 md:p-4 px-4 md:px-8 rounded-full">
                 A1naire
               </h3>
             </div>
             <div className="flex gap-5 w-full">
               <div className="w-full flex flex-col md:flex-row gap-2">
                 <div className="left md:w-1/3 w-full">
-                  <div className="flex gap-2 flex-col">
-                    <img src={third.img} alt={third.alt} className=" w-full" />
+                  <div className="flex gap-0 md:gap-2 flex-row md:flex-col">
+                    <img
+                      src={third.img}
+                      alt={third.alt}
+                      className=" w-1/2 md:w-full"
+                    />
                     <img
                       src={second.img}
                       alt={second.alt}
-                      className=" w-full"
+                      className="w-1/2 md:w-full"
                     />
                   </div>
                 </div>
 
                 <div className="right w-full md:w-2/3">
-                  <h3 className="text-xl md:text-4xl text-right flex md:hidden w-full my-2">
+                  <h3 className="text-xl md:text-4xl md:text-left text-center flex justify-center md:hidden w-myMobile md:w-max my-2 mx-[7.5%] border-[1px] border-slate-400 p-2 px-4 rounded-full">
                     A1naire
                   </h3>
                   <img src={first.img} alt={first.alt} className=" w-full" />
@@ -58,7 +62,7 @@ const SectionWithImageGrids = ({ children, data, flex = false }: Props) => {
 
             {/* text section */}
             <div>
-              <Text>{data?.text}</Text>
+              <Text className="text-left">{data?.text}</Text>
             </div>
           </div>
         </Container>

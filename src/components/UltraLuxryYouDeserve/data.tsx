@@ -1,7 +1,7 @@
 import { A1NAIRE_RIDES, OTHER_RIDES1, OTHER_RIDES2 } from "../../assets/images";
 
 export default {
-  title: <span>The True Ultra-Luxury You Deserve</span>,
+  title: <span className="block ">The True Ultra-Luxury You Deserve</span>,
   images: [A1NAIRE_RIDES, OTHER_RIDES1, OTHER_RIDES2],
   text: (
     <>

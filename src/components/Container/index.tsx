@@ -3,17 +3,27 @@ import { ReactNode } from "react";
 interface Props {
   children: ReactNode;
   flex?: boolean;
+  hardFlex?: boolean;
   white?: boolean;
   my?: number[] | string[];
+  className?: string;
 }
-const Container = ({ children, flex = false, white = false, my }: Props) => {
+const Container = ({
+  children,
+  flex = false,
+  white = false,
+  hardFlex = false,
+  className,
+}: Props) => {
   return (
     <div
-      className={` md:w-largeDesktop w-myMobile mx-auto ${
-        flex ? "flex md:flex-row flex-col" : "flex md:flex-col flex-row"
-      } items-center gap-5 ${
-        !white && `md:my-${my ? my[0] : 40} my-${my ? my[1] : 20} `
-      } ${white && "md:py-20 py-10"}`}
+      className={`${className ? className : ""} 
+      ${hardFlex ? "flex md:flex-row flex-row" : ""}
+      md:w-largeDesktop w-full  mx-auto ${
+        flex ? "flex md:flex-row flex-col" : ""
+      } items-center gap-5 
+      ${white ? "my-10 md:my-20" : "my-10 md:my-20"}
+      `}
     >
       {children}
     </div>

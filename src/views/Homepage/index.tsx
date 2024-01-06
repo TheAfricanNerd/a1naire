@@ -13,6 +13,7 @@ import LimitedAdditions from "../../components/LimitedAdditions";
 import UltraLuxryYouDeserve from "../../components/UltraLuxryYouDeserve";
 import MembershipCohort from "../../components/MembershipCohort";
 import MyGallery from "../../components/MyGallery";
+import { NamePlate } from "../../components/NamePlate";
 
 const index = () => {
   return (
@@ -23,6 +24,7 @@ const index = () => {
       <UltraPilots />
       <Vibrance />
       <Arival />
+      <NamePlate />
       <InnovativeConfigurations />
       <Productivity />
       <DynamicFreedom />

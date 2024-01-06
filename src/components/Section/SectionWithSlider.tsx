@@ -1,13 +1,14 @@
 import "../../app.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { ReactNode } from "react";
+import { ReactNode, useRef } from "react";
 import Container from "../Container";
 import { PropData } from "../../types/d";
 import Title from "../Title";
 import Slider from "react-slick";
 import useMedia from "../../hook/useMedia";
 import Text from "../Text";
+import { CHEVRON_LEFT, CHEVRON_RIGHT } from "../../assets/images";
 
 interface Props {
   children?: ReactNode;
@@ -23,6 +24,19 @@ const SectionWithSlider = ({
   Settings,
 }: Props) => {
   const isMobile = useMedia().isMobile;
+  const sliderRef = useRef<Slider>(null);
+
+  const next = () => {
+    if (sliderRef.current) {
+      sliderRef.current.slickNext();
+    }
+  };
+
+  const previous = () => {
+    if (sliderRef.current) {
+      sliderRef.current.slickPrev();
+    }
+  };
 
   const settings = Settings ?? {
     mobileFirst: true,
@@ -40,11 +54,11 @@ const SectionWithSlider = ({
   return (
     children ?? (
       <>
-        <Container flex={flex} my={["5", "5"]}>
+        <Container flex={flex} my={["2", "2"]}>
           <div className="w-auto mx-auto">
             <Title>{data?.title}</Title>
             <div className="h-auto w-mobile md:w-largeDesktop">
-              <Slider {...settings}>
+              <Slider ref={sliderRef} {...settings}>
                 {data?.slides?.map((item) => (
                   <div
                     key={item.id}
@@ -62,8 +76,23 @@ const SectionWithSlider = ({
               </Slider>
             </div>
 
+            <div className="flex w-mobile md:w-largeDesktop gap-3 justify-center md:justify-end">
+              <span
+                className="block w-max text-2xl border-2 p-2 rounded-full"
+                onClick={previous}
+              >
+                <img src={CHEVRON_LEFT.img} alt={CHEVRON_LEFT.alt} />
+              </span>
+              <span
+                className="block w-max text-2xl border-2 p-2 rounded-full"
+                onClick={next}
+              >
+                <img src={CHEVRON_RIGHT.img} alt={CHEVRON_RIGHT.alt} />
+              </span>
+            </div>
+
             <div>
-              <Text>{data?.text}</Text>
+              <Text className="text-left">{data?.text}</Text>
             </div>
           </div>
         </Container>

@@ -20,6 +20,9 @@ import a1naire_rides from "./jpg/a1naireside.jpg";
 import other_rides1 from "./jpg/other-rides1.jpg";
 import other_rides2 from "./jpg/other-rides2.jpg";
 
+import chevron_left from "./svg/chevron_left.svg";
+import chevron_right from "./svg/chevron_right.svg";
+
 import one from "./jpg/cars/one.jpg";
 import two from "./jpg/cars/two.jpg";
 import three from "./jpg/cars/three.jpg";
@@ -33,13 +36,30 @@ import ten from "./jpg/cars/ten.jpg";
 import eleven from "./jpg/cars/eleven.jpg";
 import twelve from "./jpg/cars/twelve.jpg";
 import logo_white from "./png/a1naire-logo.png";
+import digital_plate from "./jpg/digital_plate.jpg";
+import digital_plate2 from "./jpg/digital_plate2.jpg";
 
 export interface IImage {
   img: string;
   alt: string;
 }
 
+export const DIGITAL_PLATE: IImage = {
+  img: digital_plate,
+  alt: "car with custom plate",
+};
+
+export const DIGITAL_PLATE2: IImage = {
+  img: digital_plate2,
+  alt: "car with custom plate",
+};
 export const LOGO_WHITE: IImage = { img: logo_white, alt: "a1naire logo" };
+export const CHEVRON_LEFT: IImage = { img: chevron_left, alt: "aleft chevron" };
+export const CHEVRON_RIGHT: IImage = {
+  img: chevron_right,
+  alt: "right chevron",
+};
+
 export const CAR_GROUP: IImage = { img: cargroup, alt: "group of luxry cars" };
 export const PHONE: IImage = {
   img: phone,

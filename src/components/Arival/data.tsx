@@ -3,7 +3,7 @@ import { ARIVE_MAY, LEAVE_FERR } from "../../assets/images";
 
 export default {
   title: (
-    <span>
+    <span className="block">
       A Unique Arrival <br />
       and Departure
     </span>

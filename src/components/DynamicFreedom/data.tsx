@@ -10,7 +10,7 @@ export default {
         opens up a world of dynamic movement that you will soon appreciate. It
         will completely change how you move around Miami.
       </p>
-      <h5 className=" text-4xl font-semibold">Example</h5>
+      <h5 className=" text-xl font-semibold">Example</h5>
       <p>
         You can now go to a restaurant, then decide to go for a long walk and
         not have to worry about going back to a parking garage because at any

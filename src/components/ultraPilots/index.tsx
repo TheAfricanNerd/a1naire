@@ -10,9 +10,9 @@ const UltraPilots = () => {
         <div className="w-auto mx-auto">
           <Title right>{data.title}</Title>
           {/* images section */}
-          <div className="flex gap-5 w-full">
+          <div className="flex flex-col md:flex-row md:gap-5 gap-0 w-full">
             {data.images.map((image, i) => (
-              <div key={i} className="w-1/2">
+              <div key={i} className="w-full md:w-1/2">
                 <img src={image.img} alt={image.alt} className="w-full" />
               </div>
             ))}
@@ -20,7 +20,7 @@ const UltraPilots = () => {
 
           {/* text section */}
           <div>
-            <Text>{data.text}</Text>
+            <Text className="text-left">{data.text}</Text>
           </div>
         </div>
       </Container>

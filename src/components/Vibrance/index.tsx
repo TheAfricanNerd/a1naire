@@ -22,7 +22,7 @@ const Vibrance = () => {
 
           {/* text section */}
           <div>
-            <Text>{data.text}</Text>
+            <Text className="text-left">{data.text}</Text>
           </div>
         </div>
       </Container>

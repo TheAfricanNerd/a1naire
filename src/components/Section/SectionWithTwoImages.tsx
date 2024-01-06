@@ -3,6 +3,7 @@ import Container from "../Container";
 import { PropData } from "../../types/d";
 import Title from "../Title";
 import Text from "../Text";
+import { IImage } from "../../assets/images";
 
 interface Props {
   children?: ReactNode;
@@ -12,13 +13,15 @@ interface Props {
   className?: string;
 }
 
-const Section = ({
+const SectionWithTwoImages = ({
   children,
   data,
   flex = false,
   white = false,
   className,
 }: Props) => {
+  const first: IImage = data!.images![0];
+  const second: IImage = data!.images![1];
   return (
     children ?? (
       <>
@@ -28,31 +31,19 @@ const Section = ({
             {/* images section */}
             <div className="flex gap-5 w-full">
               <div className="w-full">
-                {data?.images || (data?.image && data?.images) ? (
-                  data?.images?.map((image) => (
-                    <img src={image.img} alt={image.alt} className=" w-full" />
-                  ))
-                ) : (
-                  <img
-                    src={data?.image?.img}
-                    alt={data?.image?.alt}
-                    className=" w-full"
-                  />
-                )}
-
-                {data?.subImage && (
-                  <img
-                    src={data?.subImage?.img}
-                    alt={data?.subImage?.alt}
-                    className=" w-[80%] mx-auto my-10"
-                  />
-                )}
+                <img src={first.img} alt={first.alt} className=" w-full" />
               </div>
             </div>
 
             {/* text section */}
             <div>
               <Text className="text-left">{data?.text}</Text>
+            </div>
+            <div className="w-full">
+              <img src={second.img} alt={second.alt} className=" w-full" />
+              <p className="text-sm italic mx-[7.5%] my-2">
+                This feature arrives in Q3 of 2024
+              </p>
             </div>
           </div>
         </Container>
@@ -61,4 +52,4 @@ const Section = ({
   );
 };
 
-export default Section;
+export default SectionWithTwoImages;
