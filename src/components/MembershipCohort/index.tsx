@@ -24,7 +24,12 @@ const MembershipCohort = () => {
           </Title>
         </div>
         {data.map((datum, index) => (
-          <Section data={datum} white={true} key={index}></Section>
+          <Section
+            data={datum}
+            white={true}
+            key={index}
+            className="text-center"
+          ></Section>
         ))}
 
         <div className="pb-20 w-mobile md:w-largeDesktop mx-auto text-white flex flex-col items-center border-t-2 border-slate-300 pt-10">
@@ -36,7 +41,7 @@ const MembershipCohort = () => {
           </Outline>
 
           <Title>
-            <span className="text-2xl">Not ready to become a member?</span>
+            <span className="text-2xl ">Not ready to become a member?</span>
           </Title>
 
           <Outline isTight>Sign up to get updates</Outline>
