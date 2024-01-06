@@ -33,7 +33,7 @@ const MyGallery = () => {
   ];
 
   return (
-    <>
+    <div className="mb-20">
       <Section>
         <div className="grid gap-0 md:gap-4 grid-cols-1 md:grid-cols-3 grid-rows-3 md:w-largeDesktop w-mobile mx-auto">
           {images.map((image, index) => (
@@ -41,7 +41,7 @@ const MyGallery = () => {
           ))}
         </div>
       </Section>
-    </>
+    </div>
   );
 };
 

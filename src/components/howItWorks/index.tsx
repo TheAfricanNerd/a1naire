@@ -1,4 +1,5 @@
 import Container from "../Container";
+import Text from "../Text";
 import data from "./data";
 
 const HowItWorks = () => {
@@ -11,7 +12,8 @@ const HowItWorks = () => {
         </div>
         {/* right side */}
         <div className=" w-myMobile mx-auto md:w-2/3">
-          <h3 className=" md:text-5xl leading-loose"> {data.text} </h3>
+          {/* <h3 className=" md:text-5xl leading-loose"> {data.text} </h3> */}
+          <Text>{data.text}</Text>
         </div>
       </Container>
     </>

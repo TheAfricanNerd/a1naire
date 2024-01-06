@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       width: {
-        mobile: "414px",
+        mobile: "400px",
         tablet: "601px",
         desktop: "1080px",
         myMobile: "95%",

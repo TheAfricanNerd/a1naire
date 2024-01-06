@@ -5,7 +5,9 @@ interface Props {
 }
 
 const Text = ({ children }: Props) => {
-  return <p className="md:text-[32px] text-center my-10">{children}</p>;
+  return (
+    <span className="md:text-[32px] text-center my-5 block">{children}</span>
+  );
 };
 
 export default Text;

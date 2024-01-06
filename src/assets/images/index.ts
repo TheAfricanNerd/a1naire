@@ -32,12 +32,14 @@ import nine from "./jpg/cars/nine.jpg";
 import ten from "./jpg/cars/ten.jpg";
 import eleven from "./jpg/cars/eleven.jpg";
 import twelve from "./jpg/cars/twelve.jpg";
+import logo_white from "./png/a1naire-logo.png";
 
 export interface IImage {
   img: string;
   alt: string;
 }
 
+export const LOGO_WHITE: IImage = { img: logo_white, alt: "a1naire logo" };
 export const CAR_GROUP: IImage = { img: cargroup, alt: "group of luxry cars" };
 export const PHONE: IImage = {
   img: phone,

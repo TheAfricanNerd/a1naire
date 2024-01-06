@@ -1,3 +1,6 @@
+import "../../app.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import { ReactNode } from "react";
 import Container from "../Container";
 import { PropData } from "../../types/d";
@@ -21,44 +24,44 @@ const SectionWithSlider = ({
 }: Props) => {
   const isMobile = useMedia().isMobile;
 
-  !Settings ?? {
-    dots: false,
+  const settings = Settings ?? {
+    mobileFirst: true,
+    dots: isMobile ? true : false,
     infinite: true,
     speed: 500,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 8000,
     slidesToShow: 1,
     autoplay: true,
     arrows: false,
     dotsClass: isMobile ? "mobile-dots" : "desktop-dots",
-    variableWidth: !isMobile ? false : false,
+    variableWidth: !isMobile ?? true,
   };
 
   return (
     children ?? (
       <>
-        <Container flex={flex}>
+        <Container flex={flex} my={["5", "5"]}>
           <div className="w-auto mx-auto">
             <Title>{data?.title}</Title>
-            {/* images section */}
-            <div className=" w-mobile md:w-largeDesktop">
-              <Slider {...Settings}>
+            <div className="h-auto w-mobile md:w-largeDesktop">
+              <Slider {...settings}>
                 {data?.slides?.map((item) => (
                   <div
                     key={item.id}
-                    className="p-4 w-full "
-                    style={{ width: !isMobile ? 900 : 200 }}
+                    className="p-4 w-full"
+                    style={{ width: !isMobile ? 900 : 380 }}
                   >
                     <img
                       src={item?.image?.img}
                       alt={item?.image?.alt}
                       className="w-full "
-                      style={{ width: !isMobile ? 900 : 200 }}
+                      style={{ width: !isMobile ? 900 : 380 }}
                     />
                   </div>
                 ))}
               </Slider>
             </div>
-            {/* text section */}
+
             <div>
               <Text>{data?.text}</Text>
             </div>
