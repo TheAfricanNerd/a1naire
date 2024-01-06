@@ -150,49 +150,49 @@ export const OTHER_RIDES2: IImage = {
 };
 export const ONE: IImage = {
   img: one,
-  alt: "more luxry cars",
+  alt: "Dawn",
 };
 export const TWO: IImage = {
   img: two,
-  alt: "more luxry cars",
+  alt: "Range Rover SV",
 };
 export const THREE: IImage = {
   img: three,
-  alt: "more luxry cars",
+  alt: "Maybac",
 };
 export const FOUR: IImage = {
   img: four,
-  alt: "more luxry cars",
+  alt: "Spectre",
 };
 export const FIVE: IImage = {
   img: five,
-  alt: "more luxry cars",
+  alt: "Gtc4lusso",
 };
 export const SIX: IImage = {
   img: six,
-  alt: "more luxry cars",
+  alt: "Maybach Virgil Abloh",
 };
 export const SEVEN: IImage = {
   img: seven,
-  alt: "more luxry cars",
+  alt: "Phanthom",
 };
 export const EIGHT: IImage = {
   img: eight,
-  alt: "more luxry cars",
+  alt: "Cullinan",
 };
 export const NINE: IImage = {
   img: nine,
-  alt: "more luxry cars",
+  alt: "Mulsanne",
 };
 export const TEN: IImage = {
   img: ten,
-  alt: "more luxry cars",
+  alt: "Continental GTC",
 };
 export const ELEVEN: IImage = {
   img: eleven,
-  alt: "more luxry cars",
+  alt: "Bentayga",
 };
 export const TWELVE: IImage = {
   img: twelve,
-  alt: "more luxry cars",
+  alt: "Maybach Landaulet",
 };

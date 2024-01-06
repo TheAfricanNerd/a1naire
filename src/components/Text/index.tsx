@@ -8,9 +8,10 @@ interface Props {
 const Text = ({ children, className }: Props) => {
   return (
     <span
-      className={`${
-        className ? className : "text-center"
-      } md:text-[32px] my-5 block w-myMobile mx-auto `}
+      className={`
+       md:text-[32px] block w-myMobile mx-auto ${
+         className ? className + " my-2" : "text-center  my-5"
+       }`}
     >
       {children}
     </span>
