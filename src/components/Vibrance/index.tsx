@@ -1,15 +1,15 @@
-import Container from "../Container";
-import Text from "../Text";
-import Title from "../Title";
+// import Container from "../Container";
+import SectionWithSlider from "../Section/SectionWithSlider";
+// import Text from "../Text";
+// import Title from "../Title";
 import data from "./data";
 
 const Vibrance = () => {
   return (
     <>
-      <Container>
+      {/* <Container>
         <div className="w-auto mx-auto">
           <Title>{data.title}</Title>
-          {/* images section */}
           <div className="flex gap-5 w-full">
             <div className="w-full">
               <img
@@ -19,13 +19,13 @@ const Vibrance = () => {
               />
             </div>
           </div>
-
-          {/* text section */}
           <div>
             <Text className="text-left">{data.text}</Text>
           </div>
         </div>
-      </Container>
+      </Container> */}
+
+      <SectionWithSlider data={data} />
     </>
   );
 };

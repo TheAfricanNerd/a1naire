@@ -10,7 +10,7 @@ export default {
       <p>
         For limited periods, we add some of the most iconic and cultural
         significance vehicles to our fleet. These range from the GoldFinger
-        Rolls Royce to the Maybachs of global superstars
+        Rolls Royce to the Maybachs of global superstars.
       </p>
     </>
   ),

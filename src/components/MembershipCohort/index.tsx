@@ -9,7 +9,7 @@ import data from "./data";
 const MembershipCohort = () => {
   return (
     <>
-      <div className=" bg-bg-image">
+      <div className=" bg-black">
         <div className="text-white flex flex-col items-center pt-20 md:w-largeDesktop w-mobile mx-auto ">
           <img
             src={LOGO_WHITE.img}
@@ -33,18 +33,22 @@ const MembershipCohort = () => {
         ))}
 
         <div className="pb-20 w-mobile md:w-largeDesktop mx-auto text-white flex flex-col items-center border-t-2 border-slate-300 pt-10">
-          <Outline isTight>
-            <span className="text-2xl text-center">
-              Reserve Membership: <br />
-              $10,000
-            </span>
-          </Outline>
+          <Link to={"https://buy.stripe.com/bIY3fA4133J0g9i149"}>
+            <Outline isTight>
+              <span className="text-2xl text-center">
+                Reserve Membership: <br />
+                $10,000
+              </span>
+            </Outline>
+          </Link>
 
           <Title>
             <span className="text-2xl ">Not ready to become a member?</span>
           </Title>
 
-          <Outline isTight>Sign up to get updates</Outline>
+          <Link to={"https://getwaitlist.com/waitlist/11137"}>
+            <Outline isTight>Sign up to get updates</Outline>
+          </Link>
 
           <Text>
             Contact Us <br />

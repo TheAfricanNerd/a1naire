@@ -6,9 +6,8 @@ export default {
   text: (
     <>
       <p>
-        For limited periods, we add some of the most iconic and cultural
-        significance vehicles to our fleet. These range from the GoldFinger
-        Rolls Royce to the Maybachs of global superstars
+        The difference is clear. With A1naire, you get the Ultra-Luxury that you
+        truly deserve.
       </p>
     </>
   ),

@@ -4,7 +4,7 @@ export default {
   headerText: (
     <span>
       The World’s most Ultra <br />
-      Luxurious Fleet
+      Luxurious Fleet.
     </span>
   ),
   image: CAR_GROUP,

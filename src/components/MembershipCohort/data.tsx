@@ -19,7 +19,7 @@ export default [
       <>
         <p>
           We will initially be available from 9am to 9pm seven days a week. We
-          then quickly move to 7am to 11 pm and then eventually get to 24/7
+          then quickly move to 7am to 11 pm and then eventually get to 24/7.
         </p>
       </>
     ),
@@ -33,7 +33,7 @@ export default [
           Pilots may still be going through training with regards to some of the
           advanced features of these Ultra-Luxury vehicles. We also will be fine
           tuning the high end dress code of our Pilots which you will have input
-          in
+          in.
         </p>
       </>
     ),
@@ -57,7 +57,7 @@ export default [
       <>
         <p>
           While you will enjoy using A1 naire during this period, you
-          essentially are helping us fine tune the service
+          essentially are helping us fine tune the service.
         </p>
       </>
     ),

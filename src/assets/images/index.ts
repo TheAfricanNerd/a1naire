@@ -38,15 +38,57 @@ import twelve from "./jpg/cars/twelve.jpg";
 import logo_white from "./png/a1naire-logo.png";
 import digital_plate from "./jpg/digital_plate.jpg";
 import digital_plate2 from "./jpg/digital_plate2.jpg";
+import arrow_down from "./svg/arrow_down.svg";
 
+import vibrance1 from "./jpg/vivid-vibrance/vibrance1.jpg";
+import vibrance2 from "./jpg/vivid-vibrance/vibrance2.jpg";
+import vibrance3 from "./jpg/vivid-vibrance/vibrance3.jpg";
+import vibrance4 from "./jpg/vivid-vibrance/vibrance4.jpg";
+import vibrance5 from "./jpg/vivid-vibrance/vibrance5.jpg";
+import vibrance6 from "./jpg/vivid-vibrance/vibrance6.jpg";
 export interface IImage {
   img: string;
   alt: string;
 }
 
+export const VIBRANCE1: IImage = {
+  img: vibrance1,
+  alt: "womna in luxry rolls royce",
+};
+
+export const VIBRANCE2: IImage = {
+  img: vibrance2,
+  alt: "car seat display of maybach",
+};
+
+export const VIBRANCE3: IImage = {
+  img: vibrance3,
+  alt: "couple in back seat of luxy car with white interior",
+};
+
+export const VIBRANCE4: IImage = {
+  img: vibrance4,
+  alt: "Rolls royce with back door open showing back interior",
+};
+
+export const VIBRANCE5: IImage = {
+  img: vibrance5,
+  alt: "man stepping out of luxry car",
+};
+
+export const VIBRANCE6: IImage = {
+  img: vibrance6,
+  alt: "lady at the back seat of luxry car",
+};
+
 export const DIGITAL_PLATE: IImage = {
   img: digital_plate,
   alt: "car with custom plate",
+};
+
+export const ARROW_DOWN: IImage = {
+  img: arrow_down,
+  alt: "arrow_down",
 };
 
 export const DIGITAL_PLATE2: IImage = {

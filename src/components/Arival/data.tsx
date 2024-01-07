@@ -18,7 +18,7 @@ export default {
       at least 15 of the world's most Ultra-Luxurious vehicles,
       <br />
       <Link to="/" className=" text-blue-500">
-        With over 100 unique car
+        With over 100 unique car.
       </Link>
     </p>
   ),

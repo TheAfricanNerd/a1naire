@@ -9,6 +9,7 @@ import Slider from "react-slick";
 import useMedia from "../../hook/useMedia";
 import Text from "../Text";
 import { CHEVRON_LEFT, CHEVRON_RIGHT } from "../../assets/images";
+import "./myslider.css";
 
 interface Props {
   children?: ReactNode;
@@ -50,6 +51,7 @@ const SectionWithSlider = ({
     dotsClass: isMobile ? "mobile-dots" : "desktop-dots",
     // variableWidth: !isMobile ?? true,
     variableWidth: true,
+    className: "mySlider",
   };
 
   return (
@@ -58,7 +60,7 @@ const SectionWithSlider = ({
         <Container flex={flex} my={["2", "2"]}>
           <div className="w-auto mx-auto">
             <Title>{data?.title}</Title>
-            <div className="h-auto w-mobile md:w-largeDesktop">
+            <div className="h-auto w-[95%] md:w-largeDesktop">
               <Slider ref={sliderRef} {...settings}>
                 {data?.slides?.map((item) => (
                   <div
@@ -93,7 +95,7 @@ const SectionWithSlider = ({
             </div>
 
             <div>
-              <Text className="text-left">{data?.text}</Text>
+              <Text>{data?.text}</Text>
             </div>
           </div>
         </Container>

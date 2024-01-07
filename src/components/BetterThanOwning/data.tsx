@@ -14,7 +14,7 @@ export default {
         Furthermore, you never have to worry about upgrading to the latest car
         version or paying multiple car payments. Instead, you will have access
         to the finest selection of Ultra Luxury vehicles that include the
-        Maybach, Range Rover, Bentley, Rolls Royce and Ferrari: Anytime,
+        Maybach, Range Rover, Bentley, Rolls Royce and Ferrari: Anytime.
       </p>
     </>
   ),

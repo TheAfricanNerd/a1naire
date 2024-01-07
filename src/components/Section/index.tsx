@@ -52,7 +52,7 @@ const Section = ({
 
             {/* text section */}
             <div>
-              <Text className={`text-left ${className}`}>{data?.text}</Text>
+              <Text className={`${className}`}>{data?.text}</Text>
             </div>
           </div>
         </Container>

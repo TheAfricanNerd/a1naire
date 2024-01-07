@@ -20,7 +20,7 @@ const UltraPilots = () => {
 
           {/* text section */}
           <div>
-            <Text className="text-left">{data.text}</Text>
+            <Text>{data.text}</Text>
           </div>
         </div>
       </Container>

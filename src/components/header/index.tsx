@@ -3,17 +3,33 @@ import "../../app.css";
 // import CAR_INTERIOR from "./assets/images/jpg/car_interior.jpeg";
 import LOGO from "../../assets/images/png/a1naire-logo.png";
 import LOGO_BLACK from "../../assets/images/png/a1naire-logo-black.png";
-import ENVELOP from "../../assets/images/svg/envelop-black.svg";
+// import ENVELOP from "../../assets/images/svg/envelop-black.svg";
 import { CHILD_ANIMATION, PARENT_ANIMATION } from "../../utils";
 import Video from "../../assets/videos/bg_video.mp4";
 import Slider from "react-slick";
 import data from "./data";
-import Button, { Outline } from "../button";
-import { Link } from "react-router-dom";
+// import Button, { Outline } from "../button";
+// import { Link } from "react-router-dom";
 import useMedia from "../../hook/useMedia";
+import { ARROW_DOWN } from "../../assets/images";
 
 function Header() {
   const isMobile = useMedia().isMobile;
+
+  // bounce
+  const bounceVariants = {
+    initial: {
+      y: 0,
+    },
+    bounce: {
+      y: -40,
+      transition: {
+        yoyo: Infinity,
+        duration: 1.5,
+      },
+    },
+  };
+
   // this is two
   const settings = {
     dots: true,
@@ -83,7 +99,7 @@ function Header() {
                 ))}
               </Slider>
 
-              <div className="buttons flex flex-col items-center mt-7 md:w-1/2 w-full mx-auto">
+              {/* <div className="buttons flex flex-col items-center mt-7 md:w-1/2 w-full mx-auto">
                 <Link
                   to={"https://getwaitlist.com/waitlist/11137"}
                   className="w-full"
@@ -96,11 +112,21 @@ function Header() {
                     Contact us
                   </Outline>
                 </Link>
-              </div>
+              </div> */}
             </motion.div>
           </div>
 
           {/* end of text section */}
+        </div>
+
+        <div className="absolute bottom-10 self-center left-[50%] -translate-x-[50%]">
+          <motion.div
+            initial="initial"
+            animate="bounce"
+            variants={bounceVariants}
+          >
+            <img src={ARROW_DOWN.img} alt={ARROW_DOWN.alt} />
+          </motion.div>
         </div>
       </motion.section>
     </>

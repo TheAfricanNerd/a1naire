@@ -9,7 +9,7 @@ const Text = ({ children, className }: Props) => {
   return (
     <span
       className={`
-      ${className ? className + " my-2" : "text-center  my-5"}
+      ${className ? className + " my-2 text-center" : "text-center  my-5"}
        md:text-[32px] block w-myMobile mx-auto `}
     >
       {children}

@@ -35,14 +35,14 @@ const MyGallery = () => {
   ];
 
   return (
-    <div className="mb-10 md:mb-20">
+    <div className="">
       <Section>
         <Title className="my-0">Fleet Details</Title>
         <Text className="my-2 ">
           {" "}
-          Membership gets you unlimited access to the following vehicles
+          Membership gets you unlimited access to the following vehicles.
         </Text>
-        <div className="grid gap-0 md:gap-4 grid-cols-1 md:grid-cols-3 grid-rows-3 md:w-largeDesktop w-mobile mx-auto">
+        <div className="grid gap-0 md:gap-4 grid-cols-1 md:grid-cols-3 grid-rows-3 md:w-largeDesktop w-full mx-auto">
           {images.map((image, index) => (
             <div className="relative">
               <h3 className="absolute bottom-2 right-2 text-xl text-white font-bold italic drop-shadow-Text shadow-black ">

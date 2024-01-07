@@ -26,11 +26,11 @@ const SectionWithImageGrids = ({ children, data, flex = false }: Props) => {
             {/* images section */}
             <div className="flex w-full justify-between items-end my-2">
               {" "}
-              <h3 className=" text-xl md:text-2xl w-full md:text-left text-center md:w-1/3 my-2 mx-[7.5%] md:mx-0 border-[1px] border-slate-400 p-2 md:p-4 px-4 md:px-8 rounded-full">
+              <h3 className=" text-xl md:text-2xl w-full md:text-left text-center md:w-1/3 my-2 mx-[7.5%] md:mx-0 p-2 md:p-4 px-4 md:px-8 rounded-full">
                 Your Current {!isMobile ? <br /> : ""}
                 UberBlack Option
               </h3>
-              <h3 className="text-xl md:text-2xl text-left md:flex hidden w-max my-2 mx-[7.5%] md:mx-0 border-[1px] border-slate-400 p-2 md:p-4 px-4 md:px-8 rounded-full">
+              <h3 className="text-xl md:text-2xl text-left md:flex hidden w-max my-2 mx-[7.5%] md:mx-0 p-2 md:p-4 px-4 md:px-8 rounded-full">
                 A1naire
               </h3>
             </div>
@@ -52,7 +52,7 @@ const SectionWithImageGrids = ({ children, data, flex = false }: Props) => {
                 </div>
 
                 <div className="right w-full md:w-2/3">
-                  <h3 className="text-xl md:text-4xl md:text-left text-center flex justify-center md:hidden w-myMobile md:w-max my-2 mx-[7.5%] border-[1px] border-slate-400 p-2 px-4 rounded-full">
+                  <h3 className="text-xl md:text-4xl md:text-left text-center flex justify-center md:hidden w-myMobile md:w-max my-2 mx-[7.5%]  p-2 px-4 rounded-full">
                     A1naire
                   </h3>
                   <img src={first.img} alt={first.alt} className=" w-full" />

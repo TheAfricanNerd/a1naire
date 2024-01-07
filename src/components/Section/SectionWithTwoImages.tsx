@@ -37,7 +37,7 @@ const SectionWithTwoImages = ({
 
             {/* text section */}
             <div>
-              <Text className="text-left">{data?.text}</Text>
+              <Text>{data?.text}</Text>
             </div>
             <div className="w-full">
               <img src={second.img} alt={second.alt} className=" w-full" />
