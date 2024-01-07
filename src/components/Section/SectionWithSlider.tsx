@@ -46,7 +46,7 @@ const SectionWithSlider = ({
     speed: 500,
     autoplaySpeed: 8000,
     slidesToShow: 1,
-    autoplay: true,
+    autoplay: false,
     arrows: false,
     dotsClass: isMobile ? "mobile-dots" : "desktop-dots",
     // variableWidth: !isMobile ?? true,
