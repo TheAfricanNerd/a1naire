@@ -56,7 +56,7 @@ function Header() {
           <motion.div
             variants={CHILD_ANIMATION()}
             className="left w-full md:w-[420px] md:rounded-2xl overflow-hidden border-none object-cover md:h-auto h-[100svh] absolute md:relative
-              shadow-2xl shadow-black
+              shadow-xl shadow-slate-400
             "
           >
             {isMobile ? (

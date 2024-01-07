@@ -28,7 +28,8 @@ const MembershipCohort = () => {
             data={datum}
             white={true}
             key={index}
-            className="text-center !my-10"
+            className="text-center !my-50"
+            titleClass="!my-0 !md:my-0 "
           ></Section>
         ))}
 

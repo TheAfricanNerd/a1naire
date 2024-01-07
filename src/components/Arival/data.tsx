@@ -17,7 +17,10 @@ export default {
       and leaving in another. On any given day, you have the opportunity to ride
       at least 15 of the world's most Ultra-Luxurious vehicles,
       <br />
-      <Link to="/" className=" text-blue-500">
+      <Link
+        to="https://tunjiafonja.com/execrider/website/100uniquecarexperiences.html"
+        className=" text-blue-500"
+      >
         With over 100 unique car.
       </Link>
     </p>

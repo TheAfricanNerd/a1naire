@@ -10,6 +10,8 @@ interface Props {
   flex?: boolean;
   white?: boolean;
   className?: string;
+  titleClass?: string;
+  textClass?: string;
 }
 
 const Section = ({
@@ -18,41 +20,49 @@ const Section = ({
   flex = false,
   white = false,
   className,
+  titleClass,
+  textClass,
 }: Props) => {
   return (
     children ?? (
       <>
         <Container white={white} flex={flex} className={className}>
           <div className={`w-auto mx-auto ${white && "text-white"}`}>
-            <Title>{data?.title}</Title>
+            <Title className={titleClass}>{data?.title}</Title>
             {/* images section */}
-            <div className="flex gap-5 w-full">
-              <div className="w-full">
-                {data?.images || (data?.image && data?.images) ? (
-                  data?.images?.map((image) => (
-                    <img src={image.img} alt={image.alt} className=" w-full" />
-                  ))
-                ) : (
-                  <img
-                    src={data?.image?.img}
-                    alt={data?.image?.alt}
-                    className=" w-full"
-                  />
-                )}
+            {(data?.images || data?.image) && (
+              <div className="flex gap-5 w-full">
+                <div className="w-full">
+                  {data?.images || (data?.image && data?.images) ? (
+                    data?.images?.map((image) => (
+                      <img
+                        src={image.img}
+                        alt={image.alt}
+                        className=" w-full"
+                      />
+                    ))
+                  ) : (
+                    <img
+                      src={data?.image?.img}
+                      alt={data?.image?.alt}
+                      className=" w-full"
+                    />
+                  )}
 
-                {data?.subImage && (
-                  <img
-                    src={data?.subImage?.img}
-                    alt={data?.subImage?.alt}
-                    className=" w-[80%] mx-auto my-10"
-                  />
-                )}
+                  {data?.subImage && (
+                    <img
+                      src={data?.subImage?.img}
+                      alt={data?.subImage?.alt}
+                      className=" w-[80%] mx-auto my-10"
+                    />
+                  )}
+                </div>
               </div>
-            </div>
+            )}
 
             {/* text section */}
             <div>
-              <Text className={`${className}`}>{data?.text}</Text>
+              <Text className={`${textClass ?? className}`}>{data?.text}</Text>
             </div>
           </div>
         </Container>

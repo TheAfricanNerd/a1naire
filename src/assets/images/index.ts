@@ -52,15 +52,46 @@ import vibrance3 from "./jpg/vivid-vibrance/vibrance3.jpg";
 import vibrance4 from "./jpg/vivid-vibrance/vibrance4.jpg";
 import vibrance5 from "./jpg/vivid-vibrance/vibrance5.jpg";
 import vibrance6 from "./jpg/vivid-vibrance/vibrance6.jpg";
+
+import razi1 from "./jpg/papparazi_desktop/razi1.jpg";
+import razi2 from "./jpg/papparazi_desktop/razi2.jpg";
+import razi3 from "./jpg/papparazi_desktop/razi3.jpg";
+import razi4 from "./jpg/papparazi_desktop/razi4.jpg";
+
 export interface IImage {
   img: string;
   alt: string;
 }
+// End of type declaration
+// End of type declaration
+// End of type declaration
+// End of type declaration
+
+export const RAZI1: IImage = {
+  img: razi1,
+  alt: "beyonce and jay",
+};
+
+export const RAZI2: IImage = {
+  img: razi2,
+  alt: "beyonce and jay",
+};
+
+export const RAZI3: IImage = {
+  img: razi3,
+  alt: "beyonce and jay",
+};
+
+export const RAZI4: IImage = {
+  img: razi4,
+  alt: "beyonce and jay",
+};
 
 export const LOGO_BLACK: IImage = {
   img: logo_black,
-  alt: "a1naire l=logo in black",
+  alt: "a1naire logo in black",
 };
+
 export const ORIDE1: IImage = {
   img: oride1,
   alt: "womna in luxry rolls royce",

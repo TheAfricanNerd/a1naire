@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default [
   {
     title: <span>2 of 10 spots left</span>,
@@ -86,11 +88,16 @@ export default [
       <>
         <p>
           A1naire membership is $10,000 per month, giving you unlimited access
-          to at least 15 ultra-luxury vehicle models and over 100 unique car
-          experiences once we are fully scaled out. There is a per ride fee
-          starting from $350 and is based on factors such as distance traveled.
-          Beyond early adopters, we will be accepting only 990 more members in
-          Miami.
+          to at least 15 ultra-luxury vehicle models and over{" "}
+          <Link
+            to="https://tunjiafonja.com/execrider/website/100uniquecarexperiences.html"
+            className=" text-blue-500"
+          >
+            100 unique car experiences.
+          </Link>
+          once we are fully scaled out. There is a per ride fee starting from
+          $350 and is based on factors such as distance traveled. Beyond early
+          adopters, we will be accepting only 990 more members in Miami.
         </p>
       </>
     ),
