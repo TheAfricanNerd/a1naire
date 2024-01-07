@@ -21,7 +21,7 @@ export default {
         to="https://tunjiafonja.com/execrider/website/100uniquecarexperiences.html"
         className=" text-blue-500"
       >
-        With over 100 unique car.
+        with over 100 unique car experiences.
       </Link>
     </p>
   ),

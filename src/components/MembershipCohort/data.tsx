@@ -93,7 +93,7 @@ export default [
             to="https://tunjiafonja.com/execrider/website/100uniquecarexperiences.html"
             className=" text-blue-500"
           >
-            100 unique car experiences.
+            100 unique car experiences{"  "}
           </Link>
           once we are fully scaled out. There is a per ride fee starting from
           $350 and is based on factors such as distance traveled. Beyond early

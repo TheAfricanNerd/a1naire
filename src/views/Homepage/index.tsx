@@ -32,7 +32,6 @@ const index = () => {
       <UltraLuxryYouDeserve />
       <PaparazziMedia />
       <LimitedAdditions />
-
       {/* bottom section */}
       <MyGallery />
       <MembershipCohort />
