@@ -15,13 +15,13 @@ export default {
       id: 1,
       h2: "The world's first Ultra-Luxury Ride Hailing Service",
       p: "some Paragraph text",
-      image: OPENAIR1,
+      image: OPENAIR2,
     },
     {
       id: 2,
       h2: "Works like Uber, but with the world's most ultra-luxurious vehicles and game changing features",
       p: "some Paragraph text",
-      image: OPENAIR2,
+      image: OPENAIR1,
     },
     {
       id: 3,

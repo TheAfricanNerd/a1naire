@@ -16,10 +16,10 @@ const MembershipCohort = () => {
             alt={LOGO_WHITE.alt}
             className="w-1/3 md:w-1/6"
           />
-          <Title className="md:my-0 my-0">
+          <Title className="!md:my-0 !my-0">
             <span className="text-4xl">Early Adopters Membership Cohort</span>
           </Title>
-          <Title>
+          <Title className="md:my-0 my-0">
             <span className=" text-3xl">Accepting 10 Members</span>
           </Title>
         </div>
@@ -28,7 +28,7 @@ const MembershipCohort = () => {
             data={datum}
             white={true}
             key={index}
-            className="text-center !my-50"
+            className="text-center !my-5"
             titleClass="!my-0 !md:my-0 "
           ></Section>
         ))}
