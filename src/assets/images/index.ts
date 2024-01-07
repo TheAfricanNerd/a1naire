@@ -200,7 +200,7 @@ export const TWO: IImage = {
 };
 export const THREE: IImage = {
   img: three,
-  alt: "Maybac",
+  alt: "Maybach",
 };
 export const FOUR: IImage = {
   img: four,

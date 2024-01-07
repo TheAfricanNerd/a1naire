@@ -56,8 +56,8 @@ export default [
     text: (
       <>
         <p>
-          While you will enjoy using A1 naire during this period, you
-          essentially are helping us fine tune the service.
+          While you will enjoy using A1naire during this period, you essentially
+          are helping us fine tune the service.
         </p>
       </>
     ),
@@ -87,10 +87,10 @@ export default [
         <p>
           A1naire membership is $10,000 per month, giving you unlimited access
           to at least 15 ultra-luxury vehicle models and over 100 unique car
-          experiences once we are fully scaled out. There is also a per ride fee
-          that ranges from $300 to $750 based on factors such as distance
-          traveled. Beyond early adopters, we will be accepting only 990 more
-          members in Miami.
+          experiences once we are fully scaled out. There is a per ride fee
+          starting from $350 and is based on factors such as distance traveled.
+          Beyond early adopters, we will be accepting only 990 more members in
+          Miami.
         </p>
       </>
     ),

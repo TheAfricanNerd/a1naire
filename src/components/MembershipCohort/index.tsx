@@ -32,7 +32,7 @@ const MembershipCohort = () => {
           ></Section>
         ))}
 
-        <div className="pb-20 w-mobile md:w-largeDesktop mx-auto text-white flex flex-col items-center border-t-2 border-slate-300 pt-10">
+        <div className="pb-20 w-mobile md:w-largeDesktop mx-auto text-white flex flex-col items-center  pt-10">
           <Link to={"https://buy.stripe.com/bIY3fA4133J0g9i149"}>
             <Outline isTight>
               <span className="text-2xl text-center">

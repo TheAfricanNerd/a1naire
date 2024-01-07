@@ -20,9 +20,9 @@ import Title from "../Title";
 
 const MyGallery = () => {
   const images = [
+    { image: THREE, isLimited: false },
     { image: ONE, isLimited: false },
     { image: TWO, isLimited: false },
-    { image: THREE, isLimited: false },
     { image: FOUR, isLimited: false },
     { image: FIVE, isLimited: false },
     { image: SIX, isLimited: true },

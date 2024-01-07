@@ -3,7 +3,7 @@ import { PILOT1, PILOT2, PROD1, PROD3 } from "../../assets/images";
 export default {
   title: <span>Life Changing Productivity</span>,
   images: [PILOT1, PILOT2],
-  text: "Smart people like you that value time rarely drive anymore and predominantly rely on ride hailing which can give you back up to 200 hours of yearly productivity that you are currently losing to driving and being in traffic. A1naire's Ultra Luxury vehicles with our Executive Seats provide the best space for productivity. These include foldable tables for your laptop, full screen mirroring and power outlets to charge your mobile devices.",
+  text: "Time is fast becoming the most precious commodity on earth and successful people like you value it the most. Relying on ride hailing can give you back up to 200 hours of yearly productivity that you are currently losing to driving and being in traffic. A1naire’s Ultra-Luxury vehicles with our Executive Seats provide the best space for productivity. These include foldable tables for your laptop, full screen mirroring and power outlets to charge your mobile devices.",
   slides: [
     {
       id: 1,
