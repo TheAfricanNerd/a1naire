@@ -9,7 +9,7 @@ export default {
       id: 1,
       h2: "The world's first Ultra-Luxury Ride Hailing Service",
       p: "some Paragraph text",
-      image: ORIDE2,
+      image: ORIDE3,
     },
     {
       id: 2,
@@ -21,7 +21,7 @@ export default {
       id: 3,
       h2: "It will forever change how you move around Miami",
       p: "some Paragraph text",
-      image: ORIDE3,
+      image: ORIDE2,
     },
   ],
 };
