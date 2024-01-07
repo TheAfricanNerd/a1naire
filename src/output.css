@@ -666,6 +666,11 @@ video {
   margin-right: 0px !important;
 }
 
+.\!mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
 .-ml-10 {
   margin-left: -2.5rem;
 }
