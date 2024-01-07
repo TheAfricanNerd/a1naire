@@ -8,6 +8,12 @@ import leave_ferrari from "./png/leave_ferrari.png";
 import openair1 from "./jpg/openair1.jpg";
 import openair2 from "./jpg/openair2.jpg";
 import openair3 from "./jpg/openair3.jpg";
+import logo_black from "./png/a1naire-logo-black.png";
+
+import oride1 from "./jpg/oride/oride1.jpg";
+import oride2 from "./jpg/oride/oride2.jpg";
+import oride3 from "./jpg/oride/oride3.jpg";
+
 import productivity1 from "./jpg/productivity1.jpg";
 import productivity2 from "./jpg/productivity2.jpg";
 import productivity3 from "./jpg/productivity3.jpg";
@@ -50,6 +56,23 @@ export interface IImage {
   img: string;
   alt: string;
 }
+
+export const LOGO_BLACK: IImage = {
+  img: logo_black,
+  alt: "a1naire l=logo in black",
+};
+export const ORIDE1: IImage = {
+  img: oride1,
+  alt: "womna in luxry rolls royce",
+};
+export const ORIDE2: IImage = {
+  img: oride2,
+  alt: "womna in luxry rolls royce",
+};
+export const ORIDE3: IImage = {
+  img: oride3,
+  alt: "womna in luxry rolls royce",
+};
 
 export const VIBRANCE1: IImage = {
   img: vibrance1,

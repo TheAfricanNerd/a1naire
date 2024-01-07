@@ -4,6 +4,7 @@ import { PropData } from "../../types/d";
 import Title from "../Title";
 import Text from "../Text";
 import useMedia from "../../hook/useMedia";
+import { LOGO_BLACK } from "../../assets/images";
 
 interface Props {
   children?: ReactNode;
@@ -26,12 +27,13 @@ const SectionWithImageGrids = ({ children, data, flex = false }: Props) => {
             {/* images section */}
             <div className="flex w-full justify-between items-end my-2">
               {" "}
-              <h3 className=" text-xl md:text-2xl w-full md:text-left text-center md:w-1/3 my-2 mx-[7.5%] md:mx-0 p-2 md:p-4 px-4 md:px-8 rounded-full">
+              <h3 className=" text-2xl md:text-2xl w-full md:text-left text-center md:w-1/3 my-2 mx-[7.5%] md:mx-0 p-2 md:p-4 px-4 md:px-8 rounded-full font-semibold">
                 Your Current {!isMobile ? <br /> : ""}
                 UberBlack Option
               </h3>
               <h3 className="text-xl md:text-2xl text-left md:flex hidden w-max my-2 mx-[7.5%] md:mx-0 p-2 md:p-4 px-4 md:px-8 rounded-full">
-                A1naire
+                {/* A1naire */}
+                <img src={LOGO_BLACK.img} alt={LOGO_BLACK.alt} width={120} />
               </h3>
             </div>
             <div className="flex gap-5 w-full">
@@ -53,7 +55,8 @@ const SectionWithImageGrids = ({ children, data, flex = false }: Props) => {
 
                 <div className="right w-full md:w-2/3">
                   <h3 className="text-xl md:text-4xl md:text-left text-center flex justify-center md:hidden w-myMobile md:w-max my-2 mx-[7.5%]  p-2 px-4 rounded-full">
-                    A1naire
+                    {/* A1naire */}
+                    <img src={LOGO_BLACK.img} alt={LOGO_BLACK.alt} width={90} />
                   </h3>
                   <img src={first.img} alt={first.alt} className=" w-full" />
                 </div>

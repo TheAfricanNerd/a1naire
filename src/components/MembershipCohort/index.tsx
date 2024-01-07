@@ -28,11 +28,11 @@ const MembershipCohort = () => {
             data={datum}
             white={true}
             key={index}
-            className="text-center"
+            className="text-center !my-10"
           ></Section>
         ))}
 
-        <div className="pb-20 w-mobile md:w-largeDesktop mx-auto text-white flex flex-col items-center  pt-10">
+        <div className="pb-20 w-mobile md:w-largeDesktop mx-auto text-white flex flex-col items-center  ">
           <Link to={"https://buy.stripe.com/bIY3fA4133J0g9i149"}>
             <Outline isTight>
               <span className="text-2xl text-center">
@@ -42,7 +42,7 @@ const MembershipCohort = () => {
             </Outline>
           </Link>
 
-          <Title>
+          <Title className="!my-2">
             <span className="text-2xl ">Not ready to become a member?</span>
           </Title>
 
