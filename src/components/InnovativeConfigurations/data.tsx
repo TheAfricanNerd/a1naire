@@ -9,13 +9,13 @@ import {
 export default {
   title: <span>Open Air and Innovative Configurations</span>,
   images: [PILOT1, PILOT2],
-  text: "With our unending desire to offer the pinnacle of Ultra Luxury ride hailing, we further customize our vehicles. These include a customized Bentley Continental GTC for an open air experience along with a specially configured Ferrari GTC4Lusso for a thrilling experience unlike any other.",
+  text: "With our unending desire to offer the pinnacle of Ultra-Luxury ride hailing, we further customize our vehicles. These include a customized Rolls-Royce Dawn for an open air experience along with a specially configured Ferrari GTC4Lusso for a thrilling experience unlike any other.",
   slides: [
     {
       id: 1,
       h2: "The world's first Ultra-Luxury Ride Hailing Service",
       p: "some Paragraph text",
-      image: OPENAIR2,
+      image: OPENAIR3,
     },
     {
       id: 2,
@@ -27,7 +27,7 @@ export default {
       id: 3,
       h2: "It will forever change how you move around Miami",
       p: "some Paragraph text",
-      image: OPENAIR3,
+      image: OPENAIR2,
     },
   ],
 };

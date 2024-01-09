@@ -19,9 +19,15 @@ const MembershipCohort = () => {
           <Title className="!md:my-0 !my-0">
             <span className="text-4xl">Early Adopters Membership Cohort</span>
           </Title>
-          <Title className="md:my-0 my-0">
+          <Title className=" ">
             <span className=" text-3xl">Accepting 10 Members</span>
           </Title>
+
+          <div className="bg-white px-5 md:px-0">
+            <Title className="md:my-0 my-0 !text-black">
+              <span className=" text-2xl md:text-6xl">2 of 10 spots left</span>
+            </Title>
+          </div>
         </div>
         {data.map((datum, index) => (
           <Section

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default [
   {
-    title: <span>2 of 10 spots left</span>,
+    // title: <span>2 of 10 spots left</span>,
     text: (
       <>
         <p>
@@ -108,18 +108,17 @@ export default [
     text: (
       <>
         <p>
-          The first 10 members to reserve will be gifted 50,000 shares in
-          A1naire. Each member can earn up to 50,000 more shares based on how
+          The first 10 members to reserve will be gifted 10,000 shares in
+          A1naire. Each member can earn up to 10,000 more shares based on how
           much they use the service through their first 3 months as a member. It
-          is simple. If a member averages using A1 naire at least 6 times per
-          week over their first 3 months as a member, they will earn 50,000
-          additional shares. If they don't, the additional shares they will earn
+          is simple. If a member averages using A1naire at least 6 times per
+          week over their first 3 months as a member, they will earn 10,000
+          additional shares. If they don’t, the additional shares they will earn
           will be their total number of rides divided by 72 and then multiplied
           by 10,000. Thus, each of the first 10 members has a chance to earn a
-          total of 100,000 shares which currently equates to 1% ownership of the
-          company. Our goal is to make A1naire a $100 billion+ company once we
-          reach operations in 30 cities worldwide. This means this 1% equity
-          could soon be worth over $1 billion.
+          total of 10,000 shares. Our goal is to make A1naire a $100 billion+
+          company once we reach operations in 30 cities worldwide. This means
+          this equity could soon be worth over $200 million.
         </p>
       </>
     ),
