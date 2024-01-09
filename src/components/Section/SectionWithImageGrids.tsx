@@ -58,7 +58,11 @@ const SectionWithImageGrids = ({ children, data, flex = false }: Props) => {
                     {/* A1naire */}
                     <img src={LOGO_BLACK.img} alt={LOGO_BLACK.alt} width={90} />
                   </h3>
-                  <img src={first.img} alt={first.alt} className=" w-full" />
+                  <img
+                    src={first.img}
+                    alt={first.alt}
+                    className=" w-full h-auto md:h-[100%]"
+                  />
                 </div>
               </div>
             </div>
