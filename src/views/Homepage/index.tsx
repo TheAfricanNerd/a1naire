@@ -14,8 +14,12 @@ import UltraLuxryYouDeserve from "../../components/UltraLuxryYouDeserve";
 import MembershipCohort from "../../components/MembershipCohort";
 import MyGallery from "../../components/MyGallery";
 import { NamePlate } from "../../components/NamePlate";
+import { useSearchParams } from "react-router-dom";
 
-const index = () => {
+const Homepage = () => {
+  const [searchParams] = useSearchParams();
+  const offer = searchParams.get("membershipoffer");
+
   return (
     <>
       <Header />
@@ -34,9 +38,9 @@ const index = () => {
       <LimitedAdditions />
       {/* bottom section */}
       <MyGallery />
-      <MembershipCohort />
+      {offer && offer == "1" && <MembershipCohort />}
     </>
   );
 };
 
-export default index;
+export default Homepage;
