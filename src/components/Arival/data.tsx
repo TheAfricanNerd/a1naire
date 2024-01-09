@@ -15,8 +15,7 @@ export default {
       Ultra-Luxury vehicle of your choice for each ride. This allows an
       amazingly distinguished experience of arriving in one Ultra-Luxury vehicle
       and leaving in another. On any given day, you have the opportunity to ride
-      at least 15 of the world's most Ultra-Luxurious vehicles,
-      <br />
+      at least 15 of the world's most Ultra-Luxurious vehicles,{" "}
       <Link
         to="https://tunjiafonja.com/execrider/website/100uniquecarexperiences.html"
         className=" text-blue-500"

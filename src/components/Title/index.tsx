@@ -5,14 +5,17 @@ interface Props {
   loose?: boolean;
   right?: boolean;
   className?: string;
+  innerClass?: string;
 }
 
-const Title = ({ children, right = false, className }: Props) => {
+const Title = ({ children, right = false, className, innerClass }: Props) => {
   return (
     <div className={` ${className} my-2 md:my-5`}>
       <h1
         className={`
-        md:text-7xl text-3xl w-myMobile md:w-largeDesktop mx-auto text-center font-semibold ${
+        ${
+          innerClass && innerClass
+        } md:text-7xl text-3xl w-myMobile md:w-largeDesktop mx-auto text-center font-semibold ${
           right ? "text-left" : "text-center"
         }`}
       >

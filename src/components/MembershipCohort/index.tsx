@@ -23,11 +23,18 @@ const MembershipCohort = () => {
             <span className=" text-3xl">Accepting 10 Members</span>
           </Title>
 
-          <div className="bg-white px-5 md:px-0">
-            <Title className="md:my-0 my-0 !text-black">
-              <span className=" text-2xl md:text-6xl">2 of 10 spots left</span>
+          {/* <div className="px-5 md:px-0">
+            <Title className="md:my-0 my-0 !text-black !text-xl md:text-6xl w-1/2 bg-white ">
+              <span className="block">2 of 10 spots left</span>
             </Title>
-          </div>
+          </div> */}
+
+          <Title
+            className=" bg-white text-black md:pb-5 py-2"
+            innerClass="!w-max px-10"
+          >
+            <span className="text-3xl md:text-6xl">2 of 10 spots left</span>
+          </Title>
         </div>
         {data.map((datum, index) => (
           <Section
@@ -35,7 +42,7 @@ const MembershipCohort = () => {
             white={true}
             key={index}
             className="text-center !my-5"
-            titleClass="!my-0 !md:my-0 "
+            titleClass="!my-0 !md:my-0"
           ></Section>
         ))}
 
