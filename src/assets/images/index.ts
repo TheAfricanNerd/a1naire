@@ -58,6 +58,7 @@ import razi2 from "./jpg/papparazi_desktop/razi2.jpg";
 import razi3 from "./jpg/papparazi_desktop/razi3.jpg";
 import razi4 from "./jpg/papparazi_desktop/razi4.jpg";
 
+import person_sum2prove from "./jpg/nameplate/npwperson/person_sum2prove.jpg";
 export interface IImage {
   img: string;
   alt: string;
@@ -66,6 +67,10 @@ export interface IImage {
 // End of type declaration
 // End of type declaration
 // End of type declaration
+export const PERSON_SUM2PROVE: IImage = {
+  img: person_sum2prove,
+  alt: "man in fron of luxry car with custom plates",
+};
 
 export const RAZI1: IImage = {
   img: razi1,
