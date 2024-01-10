@@ -1,8 +1,8 @@
-import { QUEENOF305, PERSON_HIM } from "../../assets/images";
+import { PERSON_HIM, DIGITAL_PLATE } from "../../assets/images";
 
 export default {
   title: <span>Your Own Digital Plate</span>,
-  images: [QUEENOF305, PERSON_HIM],
+  images: [DIGITAL_PLATE, PERSON_HIM],
   text: (
     <>
       <p>
