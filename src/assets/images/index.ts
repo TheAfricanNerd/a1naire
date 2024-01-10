@@ -58,7 +58,10 @@ import razi2 from "./jpg/papparazi_desktop/razi2.jpg";
 import razi3 from "./jpg/papparazi_desktop/razi3.jpg";
 import razi4 from "./jpg/papparazi_desktop/razi4.jpg";
 
+import queen_of_305 from "./jpg/nameplate/queen.jpg";
+
 import person_sum2prove from "./jpg/nameplate/npwperson/person_sum2prove.jpg";
+import person_him from "./jpg/nameplate/npwperson/person_him.jpg";
 export interface IImage {
   img: string;
   alt: string;
@@ -66,9 +69,20 @@ export interface IImage {
 // End of type declaration
 // End of type declaration
 // End of type declaration
+
+export const QUEENOF305: IImage = {
+  img: queen_of_305,
+  alt: "rolls royce with custom plates",
+};
+
 // End of type declaration
 export const PERSON_SUM2PROVE: IImage = {
   img: person_sum2prove,
+  alt: "man in fron of luxry car with custom plates",
+};
+
+export const PERSON_HIM: IImage = {
+  img: person_him,
   alt: "man in fron of luxry car with custom plates",
 };
 

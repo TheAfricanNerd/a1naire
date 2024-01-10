@@ -1,8 +1,8 @@
-import { DIGITAL_PLATE, PERSON_SUM2PROVE } from "../../assets/images";
+import { QUEENOF305, PERSON_HIM } from "../../assets/images";
 
 export default {
   title: <span>Your Own Digital Plate</span>,
-  images: [DIGITAL_PLATE, PERSON_SUM2PROVE],
+  images: [QUEENOF305, PERSON_HIM],
   text: (
     <>
       <p>
