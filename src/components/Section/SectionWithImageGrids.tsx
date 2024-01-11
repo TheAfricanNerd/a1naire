@@ -29,7 +29,7 @@ const SectionWithImageGrids = ({ children, data, flex = false }: Props) => {
               {" "}
               <h3 className=" text-2xl md:text-2xl w-full md:text-left text-center md:w-1/3 my-2 mx-[7.5%] md:mx-0 p-2 md:p-4 px-4 md:px-8 rounded-full font-semibold">
                 Your Current {!isMobile ? <br /> : ""}
-                UberBlack Option
+                Ride-Hailing Option
               </h3>
               <h3 className="text-xl md:text-2xl text-left md:flex hidden w-max my-2 mx-[7.5%] md:mx-0 p-2 md:p-4 px-4 md:px-8 rounded-full">
                 {/* A1naire */}
