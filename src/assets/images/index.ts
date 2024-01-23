@@ -17,6 +17,7 @@ import oride3 from "./jpg/oride/oride3.jpg";
 import productivity1 from "./jpg/productivity1.jpg";
 import productivity2 from "./jpg/productivity2.jpg";
 import productivity3 from "./jpg/productivity3.jpg";
+import productivity4 from "./jpg/productivity4.jpg";
 import manyrolls from "./jpg/many_rolls.jpg";
 import dynamicfreedom from "./jpg/unf.jpg";
 import paparazzi from "./jpg/paparazzi.jpg";
@@ -58,10 +59,23 @@ import razi2 from "./jpg/papparazi_desktop/razi2.jpg";
 import razi3 from "./jpg/papparazi_desktop/razi3.jpg";
 import razi4 from "./jpg/papparazi_desktop/razi4.jpg";
 
-import queen_of_305 from "./jpg/nameplate/queen.jpg";
-
 import person_sum2prove from "./jpg/nameplate/npwperson/person_sum2prove.jpg";
 import person_him from "./jpg/nameplate/npwperson/person_him.jpg";
+import person_dakiti_don from "./jpg/nameplate/npwperson/person_dakiti_don.jpg";
+import person_drip2hard from "./jpg/nameplate/npwperson/person_drip2hard.jpg";
+import person_moh from "./jpg/nameplate/npwperson/person_moh.jpg";
+import person_queen from "./jpg/nameplate/npwperson/person_queen.jpg";
+import person_skiii from "./jpg/nameplate/npwperson/person_skiii.jpg";
+
+import queen_of_305 from "./jpg/nameplate/queen.jpg";
+import dakiti_don from "./jpg/nameplate/dakiti-don.jpg";
+import drip2hard from "./jpg/nameplate/drip2hard.jpg";
+import him from "./jpg/nameplate/him.jpg";
+import moh from "./jpg/nameplate/moh.jpg";
+// import queen from "./jpg/nameplate/queen.jpg";
+import skiii from "./jpg/nameplate/skiii.jpg";
+import sum2prove from "./jpg/nameplate/sum2prove.jpg";
+
 export interface IImage {
   img: string;
   alt: string;
@@ -70,12 +84,58 @@ export interface IImage {
 // End of type declaration
 // End of type declaration
 
+// number plates
 export const QUEENOF305: IImage = {
   img: queen_of_305,
   alt: "rolls royce with custom plates",
 };
+export const DAKITI: IImage = {
+  img: dakiti_don,
+  alt: "rolls royce with custom plates",
+};
+export const DRIP2HARD: IImage = {
+  img: drip2hard,
+  alt: "rolls royce with custom plates",
+};
+export const HIM: IImage = {
+  img: him,
+  alt: "rolls royce with custom plates",
+};
+export const MOH: IImage = {
+  img: moh,
+  alt: "rolls royce with custom plates",
+};
+export const SKIII: IImage = {
+  img: skiii,
+  alt: "rolls royce with custom plates",
+};
+export const SUM2PROVE: IImage = {
+  img: sum2prove,
+  alt: "rolls royce with custom plates",
+};
 
-// End of type declaration
+// Person plates start here
+export const PERSON_DAKITI: IImage = {
+  img: person_dakiti_don,
+  alt: "rolls royce with custom plates",
+};
+export const PERSON_DRIP2HARD: IImage = {
+  img: person_drip2hard,
+  alt: "rolls royce with custom plates",
+};
+export const PERSON_MOH: IImage = {
+  img: person_moh,
+  alt: "rolls royce with custom plates",
+};
+export const PERSON_QUEEN: IImage = {
+  img: person_queen,
+  alt: "rolls royce with custom plates",
+};
+export const PERSON_SKIII: IImage = {
+  img: person_skiii,
+  alt: "rolls royce with custom plates",
+};
+
 export const PERSON_SUM2PROVE: IImage = {
   img: person_sum2prove,
   alt: "man in fron of luxry car with custom plates",
@@ -85,6 +145,9 @@ export const PERSON_HIM: IImage = {
   img: person_him,
   alt: "man in fron of luxry car with custom plates",
 };
+// End of number plates
+
+// End of type declaration
 
 export const RAZI1: IImage = {
   img: razi1,
@@ -225,6 +288,10 @@ export const PROD2: IImage = {
 };
 export const PROD3: IImage = {
   img: productivity3,
+  alt: "productive person",
+};
+export const PROD4: IImage = {
+  img: productivity4,
   alt: "productive person",
 };
 

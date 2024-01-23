@@ -1,4 +1,4 @@
-import { PILOT1, PILOT2, PROD1, PROD3 } from "../../assets/images";
+import { PILOT1, PILOT2, PROD1, PROD3, PROD4 } from "../../assets/images";
 
 export default {
   title: <span>Life Changing Productivity</span>,
@@ -16,6 +16,12 @@ export default {
       h2: "Works like Uber, but with the world's most ultra-luxurious vehicles and game changing features",
       p: "some Paragraph text",
       image: PROD3,
+    },
+    {
+      id: 2,
+      h2: "Works like Uber, but with the world's most ultra-luxurious vehicles and game changing features",
+      p: "some Paragraph text",
+      image: PROD4,
     },
   ],
 };

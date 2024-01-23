@@ -4,13 +4,23 @@ import { PropData } from "../../types/d";
 import Title from "../Title";
 import Text from "../Text";
 import { IImage } from "../../assets/images";
+import FadeSlider from "./FadeSlider";
 
+interface InnerData {
+  id?: string | number;
+  h2?: string | ReactNode;
+  p?: string | ReactNode;
+  image?: IImage;
+}
 interface Props {
   children?: ReactNode;
   data?: PropData;
   flex?: boolean;
   white?: boolean;
   className?: string;
+  isSlide?: boolean;
+  slide1?: InnerData[];
+  slide2?: InnerData[];
 }
 
 const SectionWithTwoImages = ({
@@ -19,9 +29,8 @@ const SectionWithTwoImages = ({
   flex = false,
   white = false,
   className,
+  isSlide = false,
 }: Props) => {
-  const first: IImage = data!.images![0];
-  const second: IImage = data!.images![1];
   return (
     children ?? (
       <>
@@ -29,18 +38,34 @@ const SectionWithTwoImages = ({
           <div className={`w-auto mx-auto ${white && "text-white"}`}>
             <Title>{data?.title}</Title>
             {/* images section */}
-            <div className="flex gap-5 w-full">
-              <div className="w-full">
-                <img src={first.img} alt={first.alt} className=" w-full" />
+            {!isSlide ? (
+              <div className="flex gap-5 w-full">
+                <div className="w-full">
+                  <img
+                    src={data!.images![0].img}
+                    alt={data!.images![0].alt}
+                    className=" w-full"
+                  />
+                </div>
               </div>
-            </div>
+            ) : (
+              <FadeSlider data={data?.slide1} />
+            )}
 
             {/* text section */}
             <div>
               <Text>{data?.text}</Text>
             </div>
             <div className="w-full">
-              <img src={second.img} alt={second.alt} className=" w-full" />
+              {!isSlide ? (
+                <img
+                  src={data!.images![1].img}
+                  alt={data!.images![1].alt}
+                  className=" w-full"
+                />
+              ) : (
+                <FadeSlider data={data?.slide2} />
+              )}
               <p className="text-sm italic mx-[7.5%] my-2">
                 This feature arrives in Q3 of 2024
               </p>

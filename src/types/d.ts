@@ -14,4 +14,6 @@ export interface PropData {
   subImage?: IImage;
   text?: string | ReactNode;
   slides?: SlidesProps[];
+  slide1?: SlidesProps[];
+  slide2?: SlidesProps[];
 }
