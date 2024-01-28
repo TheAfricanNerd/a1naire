@@ -2,10 +2,10 @@ import { PERSON_HIM } from "../../assets/images/index";
 import {
   DAKITI,
   MOH,
-  PERSON_DAKITI,
+  // PERSON_DAKITI,
   PERSON_DRIP2HARD,
-  PERSON_MOH,
-  PERSON_QUEEN,
+  // PERSON_MOH,
+  // PERSON_QUEEN,
   PERSON_SKIII,
   PERSON_SUM2PROVE,
   QUEENOF305,
