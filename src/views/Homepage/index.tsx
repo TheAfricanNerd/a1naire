@@ -32,7 +32,6 @@ const Homepage = () => {
       <InnovativeConfigurations />
       <Productivity />
       <DynamicFreedom />
-
       <BetterThanOwning />
       <UltraLuxryYouDeserve />
       <PaparazziMedia />
