@@ -1,4 +1,5 @@
 // import { Gallery } from "react-grid-gallery";
+import { Link } from "react-router-dom";
 import {
   EIGHT,
   ELEVEN,
@@ -16,6 +17,7 @@ import {
 import Section from "../Section";
 import Text from "../Text";
 import Title from "../Title";
+// import Button from "../button";
 // import Container from "../Container";
 
 const MyGallery = () => {
@@ -60,6 +62,12 @@ const MyGallery = () => {
           ))}
         </div>
       </Section>
+
+      <Link to="https://ride.a1naire.com/register">
+        <button className="block !bg-blue-600 text-3xl rounded-full mx-auto  p-10 py-5 my-5 text-white cursor-pointer">
+          Start Using A1naire
+        </button>
+      </Link>
     </div>
   );
 };
