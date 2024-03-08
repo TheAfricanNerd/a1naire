@@ -8,7 +8,7 @@ import InnovativeConfigurations from "../../components/InnovativeConfigurations"
 import Productivity from "../../components/Productivity";
 import DynamicFreedom from "../../components/DynamicFreedom";
 import BetterThanOwning from "../../components/BetterThanOwning";
-import PaparazziMedia from "../../components/PaparazziMedia";
+// import PaparazziMedia from "../../components/PaparazziMedia";
 import LimitedAdditions from "../../components/LimitedAdditions";
 import UltraLuxryYouDeserve from "../../components/UltraLuxryYouDeserve";
 import MembershipCohort from "../../components/MembershipCohort";
@@ -34,7 +34,7 @@ const Homepage = () => {
       <DynamicFreedom />
       <BetterThanOwning />
       <UltraLuxryYouDeserve />
-      <PaparazziMedia />
+      {/* <PaparazziMedia /> */}
       <LimitedAdditions />
       {/* bottom section */}
       <MyGallery />
