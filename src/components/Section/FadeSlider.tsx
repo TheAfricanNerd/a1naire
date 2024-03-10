@@ -49,6 +49,7 @@ const FadeSlider = ({ children, data, flex = false, Settings }: Props) => {
     // variableWidth: !isMobile ?? true,
     variableWidth: false,
     className: "mySlider",
+    pauseOnHover: false,
   };
 
   return (
