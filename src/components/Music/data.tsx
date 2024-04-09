@@ -6,8 +6,8 @@ export default {
   text: (
     <>
       <p>
-        A1naire redefines the ride experience, offering personalized soundtracks
-        that cater to individual preferences. Advanced curation and AI-generated
+        A1naire redefines the ride experience, offering instrumental soundtracks
+        that cater to individual preferences. Advanced curation and AI-assisted
         recommendations transform the journey into a deeply immersive musical
         voyage. From soothing melodies to energizing beats, the music resonates
         with each rider's mood and taste, elevating the travel experience to new
