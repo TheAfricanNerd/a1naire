@@ -30,13 +30,13 @@ const Homepage = () => {
       <Vibrance />
       <Arival />
       <NamePlate />
-      <Music />
       <InnovativeConfigurations />
       <Productivity />
       <DynamicFreedom />
       <BetterThanOwning />
       <UltraLuxryYouDeserve />
       <PaparazziMedia />
+      <Music />
       <LimitedAdditions />
       {/* bottom section */}
       <MyGallery />
