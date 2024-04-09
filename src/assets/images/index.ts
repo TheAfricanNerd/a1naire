@@ -26,6 +26,7 @@ import paparazzi_icons from "./png/icons.png";
 import a1naire_rides from "./jpg/a1naireside.jpg";
 import other_rides1 from "./jpg/other-rides1.jpg";
 import other_rides2 from "./jpg/other-rides2.jpg";
+import music from "./jpg/music.jpg";
 
 import chevron_left from "./svg/chevron_left.svg";
 import chevron_right from "./svg/chevron_right.svg";
@@ -151,6 +152,10 @@ export const PERSON_HIM: IImage = {
 
 export const RAZI1: IImage = {
   img: razi1,
+  alt: "beyonce and jay",
+};
+export const MUSIC: IImage = {
+  img: music,
   alt: "beyonce and jay",
 };
 

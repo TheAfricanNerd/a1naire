@@ -15,6 +15,7 @@ import MembershipCohort from "../../components/MembershipCohort";
 import MyGallery from "../../components/MyGallery";
 import { NamePlate } from "../../components/NamePlate";
 import { useSearchParams } from "react-router-dom";
+import Music from "../../components/Music";
 
 const Homepage = () => {
   const [searchParams] = useSearchParams();
@@ -29,6 +30,7 @@ const Homepage = () => {
       <Vibrance />
       <Arival />
       <NamePlate />
+      <Music />
       <InnovativeConfigurations />
       <Productivity />
       <DynamicFreedom />
