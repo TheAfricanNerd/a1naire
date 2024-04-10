@@ -77,6 +77,8 @@ import moh from "./jpg/nameplate/moh.jpg";
 import skiii from "./jpg/nameplate/skiii.jpg";
 import sum2prove from "./jpg/nameplate/sum2prove.jpg";
 
+import all_nameplate from "./jpg/nameplate/all_nameplate.jpg";
+
 export interface IImage {
   img: string;
   alt: string;
@@ -149,6 +151,11 @@ export const PERSON_HIM: IImage = {
 // End of number plates
 
 // End of type declaration
+
+export const ALL_NAME_PLATE: IImage = {
+  img: all_nameplate,
+  alt: "All name plate",
+};
 
 export const RAZI1: IImage = {
   img: razi1,

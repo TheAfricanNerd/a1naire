@@ -3,8 +3,8 @@ import Container from "../Container";
 import { PropData } from "../../types/d";
 import Title from "../Title";
 import Text from "../Text";
-import { IImage } from "../../assets/images";
 import FadeSlider from "./FadeSlider";
+import { IImage } from "../../assets/images/index";
 
 interface InnerData {
   id?: string | number;
@@ -21,6 +21,7 @@ interface Props {
   isSlide?: boolean;
   slide1?: InnerData[];
   slide2?: InnerData[];
+  thirdImage?: IImage;
 }
 
 const SectionWithTwoImages = ({
@@ -30,6 +31,7 @@ const SectionWithTwoImages = ({
   white = false,
   className,
   isSlide = false,
+  thirdImage,
 }: Props) => {
   return (
     children ?? (
@@ -53,6 +55,12 @@ const SectionWithTwoImages = ({
             )}
 
             {/* text section */}
+
+            {thirdImage && (
+              <div>
+                <img src={thirdImage?.img} alt={thirdImage?.alt} />
+              </div>
+            )}
             <div>
               <Text>{data?.text}</Text>
             </div>
