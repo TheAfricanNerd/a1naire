@@ -1,7 +1,7 @@
 import { MUSIC } from "../../assets/images";
 
 export default {
-  title: <span>Music Tailored For You</span>,
+  title: <span>Music For A Deeply Immersive Voyage</span>,
   image: MUSIC,
   text: (
     <>

@@ -5,7 +5,7 @@ import {
   VIBRANCE3,
   VIBRANCE4,
   VIBRANCE5,
-  VIBRANCE6,
+  VIBRANCE6, VIBRANCE7,
 } from "../../assets/images";
 
 export default {
@@ -42,6 +42,12 @@ export default {
       h2: "It will forever change how you move around Miami",
       p: "some Paragraph text",
       image: VIBRANCE5,
+    },
+    {
+      id: 5,
+      h2: "It will forever change how you move around Miami",
+      p: "some Paragraph text",
+      image: VIBRANCE7,
     },
     {
       id: 6,

@@ -54,6 +54,7 @@ import vibrance3 from "./jpg/vivid-vibrance/vibrance3.jpg";
 import vibrance4 from "./jpg/vivid-vibrance/vibrance4.jpg";
 import vibrance5 from "./jpg/vivid-vibrance/vibrance5.jpg";
 import vibrance6 from "./jpg/vivid-vibrance/vibrance6.jpg";
+import vibrance7 from "./jpg/vivid-vibrance/vibrance7.jpg";
 
 import razi1 from "./jpg/papparazi_desktop/razi1.jpg";
 import razi2 from "./jpg/papparazi_desktop/razi2.jpg";
@@ -226,6 +227,10 @@ export const VIBRANCE5: IImage = {
 
 export const VIBRANCE6: IImage = {
   img: vibrance6,
+  alt: "lady at the back seat of luxry car",
+};
+export const VIBRANCE7: IImage = {
+  img: vibrance7,
   alt: "lady at the back seat of luxry car",
 };
 
