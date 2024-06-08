@@ -79,6 +79,7 @@ import skiii from "./jpg/nameplate/skiii.jpg";
 import sum2prove from "./jpg/nameplate/sum2prove.jpg";
 
 import all_nameplate from "./jpg/nameplate/all_nameplate.jpg";
+import A1Login from "./png/a1-login.png"
 
 export interface IImage {
   img: string;
@@ -89,6 +90,11 @@ export interface IImage {
 // End of type declaration
 
 // number plates
+export const A1LOGIN: IImage = {
+  img: A1Login,
+  alt: "login image",
+};
+
 export const QUEENOF305: IImage = {
   img: queen_of_305,
   alt: "rolls royce with custom plates",
