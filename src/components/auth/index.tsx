@@ -3,7 +3,7 @@
 // import Title from "../Title";
 import React, {useState} from "react";
 import {A1LOGIN, LOGO_BLACK} from "../../assets/images";
-import Text from "../Text";
+
 
 interface IAuth {
   handleChange: (s:string) => void;
