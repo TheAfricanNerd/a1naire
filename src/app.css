@@ -16,6 +16,7 @@
   color: white;
   display: flex !important;
   justify-content: center;
+  display: none !important;
 }
 
 .mobile-dots > .slick-active {
