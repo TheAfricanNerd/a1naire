@@ -6,6 +6,9 @@ interface IButton {
   color?: string;
   dark?: boolean;
   isTight?: boolean;
+  isLarge?: boolean;
+  isSmall?: boolean;
+  hug?: boolean;
 }
 
 const Button = ({ hancleClick, children, dark, isLarge }: IButton) => {
@@ -28,6 +31,8 @@ export const Outline = ({
   children,
   dark,
   isTight = false,
+  isSmall,
+  hug,
 }: IButton) => {
   return (
     <div
