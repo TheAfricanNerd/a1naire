@@ -20,11 +20,10 @@ import Title from "../Title";
 // import Button from "../button";
 // import Container from "../Container";
 
-
 interface IGallery {
-  reference: string | null
+  reference: string | null;
 }
-const MyGallery = ({reference}:IGallery) => {
+const MyGallery = ({ reference }: IGallery) => {
   const images = [
     { image: THREE, isLimited: false },
     { image: ONE, isLimited: false },
@@ -40,7 +39,9 @@ const MyGallery = ({reference}:IGallery) => {
     { image: TWELVE, isLimited: true },
   ];
 
-  const regLink = reference ? `https://ride.a1naire.com/register?ref=${reference}` : `https://ride.a1naire.com/register`
+  const regLink = reference
+    ? `https://ride.a1naire.com/register?ref=${reference}`
+    : `https://ride.a1naire.com/register`;
   return (
     <div className="">
       <Section>
@@ -69,7 +70,7 @@ const MyGallery = ({reference}:IGallery) => {
       </Section>
 
       <Link to={regLink}>
-        <button className="block !bg-[#0033CC] text-3xl md:text-5xl rounded-full mx-auto  p-10 md:px-40 py-5 md:py-10 my-5 text-white cursor-pointer">
+        <button className="block bg-[#42b72a] hover:bg-[#42b72ac5] text-2xl md:text-4xl rounded-md mx-auto drop-shadow-sm font-bold p-10 md:px-40 py-5 md:py-8 my-5 text-white cursor-pointer">
           Start Using A1naire
         </button>
       </Link>
