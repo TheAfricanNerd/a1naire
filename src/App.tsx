@@ -10,7 +10,7 @@ import Slider from "react-slick";
 import data from "./data";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Button, { Outline } from "./button";
+import Button, { Outline } from "./components/button";
 import { Link } from "react-router-dom";
 import useMedia from "./hook/useMedia";
 
