@@ -15,7 +15,7 @@ const router = createBrowserRouter([
     element: <Homepage />,
   },
   {
-    path: "/pdf",
+    path: "/A1naire-customer-presentation",
     element: <PdfViewer />
   }
 ]);
