@@ -795,8 +795,30 @@ video {
   height: 100vh;
 }
 
+.h-max {
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.h-20 {
+  height: 5rem;
+}
+
+.h-\[400\] {
+  height: 400;
+}
+
+.h-\[400px\] {
+  height: 400px;
+}
+
 .max-h-\[100vh\] {
   max-height: 100vh;
+}
+
+.max-h-max {
+  max-height: -moz-max-content;
+  max-height: max-content;
 }
 
 .min-h-screen {
