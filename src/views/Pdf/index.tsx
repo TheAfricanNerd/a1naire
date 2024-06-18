@@ -18,7 +18,7 @@ const options = {
 
 
 const resizeObserverOptions = {};
-const maxWidth = 780;
+// const maxWidth = 780;
 function PdfViewer(){
     const file = useMemo(() => ({url:PDF_file}), []);
 
@@ -53,7 +53,8 @@ function PdfViewer(){
                             pageNumber={index + 1}
                             renderAnnotationLayer={false}
                             renderTextLayer={false}
-                            width={containerWidth ? Math.max(containerWidth, maxWidth) : maxWidth}
+                            width={containerWidth}
+                            // width={containerWidth ? Math.max(containerWidth, maxWidth) : maxWidth}
                         />
                     ))}
 
