@@ -4,6 +4,7 @@ import {useCallback, useMemo, useState} from "react";
 import { pdfjs } from 'react-pdf';
 import { Document, Page } from 'react-pdf';
 import {useResizeObserver} from "@wojtekmaj/react-hooks";
+import PDF_file from '../../assets/docs/A1naire-customer-presentation.pdf'
 
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
     'pdfjs-dist/build/pdf.worker.min.mjs',
@@ -19,7 +20,7 @@ const options = {
 const resizeObserverOptions = {};
 const maxWidth = 780;
 function PdfViewer(){
-    const file = useMemo(() => ({url:'./src/A1naire-customer-presentation.pdf'}), []);
+    const file = useMemo(() => ({url:PDF_file}), []);
 
     const [numPages, setNumPages] = useState<number>();
     // const [pageNumber, setPageNumber] = useState<number>(1);
