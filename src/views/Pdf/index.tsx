@@ -50,6 +50,7 @@ function PdfViewer(){
                 <Document loading={<div>Loading...</div>} file={file} onLoadSuccess={onDocumentLoadSuccess} options={options}>
                     {Array.from(new Array(numPages), (_el, index) => (
                         <Page
+                            className={'border-b border-2 border-gray-500'}
                             key={`page_${index + 1}`}
                             pageNumber={index + 1}
                             // renderAnnotationLayer={false}
