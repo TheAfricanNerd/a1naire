@@ -2,6 +2,7 @@
 import {useCallback, useMemo, useState} from "react";
 // import Iframe from "react-iframe";
 import { pdfjs } from 'react-pdf';
+import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 import { Document, Page } from 'react-pdf';
 import {useResizeObserver} from "@wojtekmaj/react-hooks";
 import PDF_file from '../../assets/docs/A1naire-customer-presentation.pdf'
@@ -51,7 +52,7 @@ function PdfViewer(){
                         <Page
                             key={`page_${index + 1}`}
                             pageNumber={index + 1}
-                            renderAnnotationLayer={false}
+                            // renderAnnotationLayer={false}
                             renderTextLayer={false}
                             width={containerWidth}
                             // width={containerWidth ? Math.max(containerWidth, maxWidth) : maxWidth}
