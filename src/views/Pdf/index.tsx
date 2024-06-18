@@ -17,7 +17,7 @@ const options = {
 
 
 const resizeObserverOptions = {};
-const maxWidth = 800;
+const maxWidth = 780;
 function PdfViewer(){
     const file = useMemo(() => ({url:'./src/A1naire-customer-presentation.pdf'}), []);
 
