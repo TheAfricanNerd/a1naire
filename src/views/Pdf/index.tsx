@@ -21,6 +21,7 @@ const options = {
 const resizeObserverOptions = {};
 // const maxWidth = 780;
 function PdfViewer(){
+    // const file = useMemo(() => ({url:PDF_file}), []);
     const file = useMemo(() => ({url:PDF_file}), []);
 
     const [numPages, setNumPages] = useState<number>();
