@@ -5,13 +5,16 @@ import {
   VIBRANCE3,
   VIBRANCE4,
   VIBRANCE5,
-  VIBRANCE6, VIBRANCE7,
+  VIBRANCE6,
+  VIBRANCE7,
+  VIBRANCE9,
 } from "../../assets/images";
 
 export default {
   title: "Vivid Vibrance",
   image: ROLLS_WOMAN,
-  text: "Our Fleet and Pilots bring vibrance thanks to the countless hours spent curating car paint combinations, interior materials and attire that inspire and bring vibrance to every ride.",
+  text:
+    "Our Fleet and Pilots bring vibrance thanks to the countless hours spent curating car paint combinations, interior materials and attire that inspire and bring vibrance to every ride.",
   slides: [
     {
       id: 1,
@@ -21,7 +24,8 @@ export default {
     },
     {
       id: 2,
-      h2: "Works like Uber, but with the world's most ultra-luxurious vehicles and game changing features",
+      h2:
+        "Works like Uber, but with the world's most ultra-luxurious vehicles and game changing features",
       p: "some Paragraph text",
       image: VIBRANCE2,
     },
@@ -44,13 +48,19 @@ export default {
       image: VIBRANCE5,
     },
     {
-      id: 5,
+      id: 6,
+      h2: "It will forever change how you move around Miami",
+      p: "some Paragraph text",
+      image: VIBRANCE9,
+    },
+    {
+      id: 7,
       h2: "It will forever change how you move around Miami",
       p: "some Paragraph text",
       image: VIBRANCE7,
     },
     {
-      id: 6,
+      id: 8,
       h2: "It will forever change how you move around Miami",
       p: "some Paragraph text",
       image: VIBRANCE6,
