@@ -55,6 +55,7 @@ import vibrance4 from "./jpg/vivid-vibrance/vibrance4.jpg";
 import vibrance5 from "./jpg/vivid-vibrance/vibrance5.jpg";
 import vibrance6 from "./jpg/vivid-vibrance/vibrance6.jpg";
 import vibrance7 from "./jpg/vivid-vibrance/vibrance7.jpg";
+import vibrance9 from "./jpg/vivid-vibrance/vibrance9.jpg";
 
 import razi1 from "./jpg/papparazi_desktop/razi1.jpg";
 import razi2 from "./jpg/papparazi_desktop/razi2.jpg";
@@ -79,7 +80,7 @@ import skiii from "./jpg/nameplate/skiii.jpg";
 import sum2prove from "./jpg/nameplate/sum2prove.jpg";
 
 import all_nameplate from "./jpg/nameplate/all_nameplate.jpg";
-import A1Login from "./png/a1-login.png"
+import A1Login from "./png/a1-login.png";
 
 export interface IImage {
   img: string;
@@ -237,6 +238,10 @@ export const VIBRANCE6: IImage = {
 };
 export const VIBRANCE7: IImage = {
   img: vibrance7,
+  alt: "lady at the back seat of luxry car",
+};
+export const VIBRANCE9: IImage = {
+  img: vibrance9,
   alt: "lady at the back seat of luxry car",
 };
 
