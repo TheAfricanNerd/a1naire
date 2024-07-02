@@ -6,8 +6,6 @@ import Title from "../Title";
 import { Outline } from "../button";
 import data from "./data";
 
-
-
 const MembershipCohort = () => {
   return (
     <>

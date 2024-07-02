@@ -6,8 +6,9 @@ import {
   VIBRANCE4,
   VIBRANCE5,
   VIBRANCE6,
-  VIBRANCE7,
   VIBRANCE9,
+  VIBRANCE7,
+  VIBRANCE10,
 } from "../../assets/images";
 
 export default {
@@ -27,7 +28,7 @@ export default {
       h2:
         "Works like Uber, but with the world's most ultra-luxurious vehicles and game changing features",
       p: "some Paragraph text",
-      image: VIBRANCE2,
+      image: VIBRANCE9,
     },
     {
       id: 3,
@@ -51,7 +52,7 @@ export default {
       id: 6,
       h2: "It will forever change how you move around Miami",
       p: "some Paragraph text",
-      image: VIBRANCE9,
+      image: VIBRANCE2,
     },
     {
       id: 7,
@@ -61,6 +62,12 @@ export default {
     },
     {
       id: 8,
+      h2: "It will forever change how you move around Miami",
+      p: "some Paragraph text",
+      image: VIBRANCE10,
+    },
+    {
+      id: 9,
       h2: "It will forever change how you move around Miami",
       p: "some Paragraph text",
       image: VIBRANCE6,
