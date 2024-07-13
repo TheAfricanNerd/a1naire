@@ -8,6 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Homepage from "./views/Homepage/index.tsx";
 import PdfViewer from "./views/Pdf";
+import { Supabase, SupaBaseContext } from "./database/index";
 
 const router = createBrowserRouter([
   {
@@ -16,12 +17,14 @@ const router = createBrowserRouter([
   },
   {
     path: "/A1naire-customer-presentation",
-    element: <PdfViewer />
-  }
+    element: <PdfViewer />,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <SupaBaseContext.Provider value={Supabase}>
+      <RouterProvider router={router} />
+    </SupaBaseContext.Provider>
   </React.StrictMode>
 );

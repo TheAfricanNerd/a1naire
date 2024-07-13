@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.44.3",
     "@types/dotenv": "^8.2.0",
     "@types/react-slick": "^0.23.12",
     "@wojtekmaj/react-hooks": "^1.20.0",
@@ -21,10 +22,12 @@
     "react-dom": "^18.2.0",
     "react-iframe": "^1.8.5",
     "react-pdf": "^9.0.0",
+    "react-phone-input-2": "^2.15.1",
     "react-router-dom": "^6.20.1",
     "react-slick": "^0.29.0",
     "slick-carousel": "^1.8.1",
-    "tailwindcss": "^3.3.3"
+    "tailwindcss": "^3.3.3",
+    "uuid": "^10.0.0"
   },
   "devDependencies": {
     "@aws-amplify/backend": "^1.0.3",
