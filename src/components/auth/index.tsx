@@ -80,7 +80,7 @@ const Auth = ({ handleChange, handleSubmit, error, loading }: IAuth) => {
                 className={`my-4 block text-white ${error && "text-red-500"}`}
                 style={{ marginBottom: "6px" }}
               >
-                Email
+                Your email
               </label>
               <input
                 style={{ height: "50px", paddingInline: "10px" }}
@@ -98,7 +98,7 @@ const Auth = ({ handleChange, handleSubmit, error, loading }: IAuth) => {
                 className={`my-4 block text-white ${error && "text-red-500"}`}
                 style={{ marginBottom: "6px" }}
               >
-                Phone
+                Your phone number
               </label>
 
               <PhoneInput
