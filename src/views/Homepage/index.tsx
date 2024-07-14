@@ -78,11 +78,13 @@ const Homepage = () => {
       }
 
       const { user, error } = await checkUser(email);
+
       if (error) {
         window.alert("unexpected server error");
       }
 
-      if (user) {
+      if (user && user.length > 0) {
+        window.alert("welcome back!");
         setIsLoggedIn(true);
         return;
       }
