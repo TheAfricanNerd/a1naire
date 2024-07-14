@@ -71,7 +71,7 @@ const Auth = ({ handleChange, handleSubmit, error, loading }: IAuth) => {
               />
             </>
 
-            {error && <p className="text-red-500">Passcode incorrect</p>}
+            {error && <p className="text-red-500">Password incorrect</p>}
 
             <>
               <label
@@ -106,9 +106,12 @@ const Auth = ({ handleChange, handleSubmit, error, loading }: IAuth) => {
                   height: "50px",
                   width: "100%",
                   backgroundColor: "transparent",
+                  color: "white",
                 }}
-                containerClass="border-2 w-full block !min-h-5 bg-[#212121] border-white text-white"
+                containerClass="border-2 w-full block !min-h-5 bg-[#212121] border-white"
                 country={"us"}
+                disableCountryCode
+                onlyCountries={["us"]}
                 value={phone}
                 onChange={handlePhone}
               />

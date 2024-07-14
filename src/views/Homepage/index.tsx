@@ -68,7 +68,7 @@ const Homepage = () => {
       }
 
       if (!password || password.length < 0) {
-        window.alert("please provide a passkey");
+        window.alert("please provide a password");
         return;
       }
 
