@@ -1,6 +1,6 @@
 import { useSearchParams } from "react-router-dom";
 import Auth from "../../components/auth";
-import { useContext, useEffect, useState } from "react";
+import { useContext, useState } from "react";
 import Header from "../../components/header";
 import CarGroup from "../../components/carGroup";
 import HowItWorks from "../../components/howItWorks";
@@ -77,6 +77,16 @@ const Homepage = () => {
         return;
       }
 
+      const { user, error } = await checkUser(email);
+      if (error) {
+        window.alert("unexpected server error");
+      }
+
+      if (user) {
+        setIsLoggedIn(true);
+        return;
+      }
+
       const ok = await createUser();
 
       if (password == KEY && ok) {
@@ -88,6 +98,11 @@ const Homepage = () => {
     } finally {
       setLoading(false);
     }
+  };
+
+  const checkUser = async (email: string) => {
+    const { data, error } = await GetUser(email);
+    return { user: data, error };
   };
 
   const createUser = async () => {
@@ -103,12 +118,6 @@ const Homepage = () => {
     console.log(data);
     return 1;
   };
-  useEffect(() => {
-    (async () => {
-      const { data, error } = await GetUser();
-      console.log({ data, error });
-    })();
-  }, []);
 
   return (
     <>
