@@ -35,6 +35,12 @@ const Homepage = () => {
 
   const reference = searchParams.get("ref");
 
+  // email validator
+  function validateEmail(email: string) {
+    const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return regex.test(email);
+  }
+
   const handleChange = (data: IRegData) => {
     setError(false);
     setPassword(data.password);
@@ -44,14 +50,38 @@ const Homepage = () => {
   const handleSubmit = async () => {
     setLoading(true);
     try {
+      if (!email || email.length < 1) {
+        window.alert("please provide an email");
+        return;
+      }
+
+      if (!validateEmail(email)) {
+        window.alert(
+          `please provide a valid email, ${email} is not a valid email`
+        );
+        return;
+      }
+
+      if (!phone || phone.length < 1) {
+        window.alert("please provide a valid phone number");
+        return;
+      }
+
+      if (!password || password.length < 0) {
+        window.alert("please provide a passkey");
+        return;
+      }
+
+      if (password !== KEY) {
+        setError(true);
+        return;
+      }
+
       const ok = await createUser();
+
       if (password == KEY && ok) {
         setIsLoggedIn(true);
         setError(false);
-      } else if (!ok) {
-        window.alert("trouble registering user");
-      } else {
-        setError(true);
       }
     } catch (err) {
       window.alert("something went wrong...");
