@@ -114,6 +114,7 @@ const Auth = ({ handleChange, handleSubmit, error, loading }: IAuth) => {
                 onlyCountries={["us"]}
                 value={phone}
                 onChange={handlePhone}
+                placeholder=""
               />
               {/* <input
                 style={{ height: "50px", paddingInline: "10px" }}
