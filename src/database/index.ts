@@ -47,8 +47,8 @@ export const Supabase = {
       return {data, error}
     },
 
-    GetUser: async () => {
-      const { data, error } = await sb.from("users").select("*");
+    GetUser: async (email:string) => {
+      const { data, error } = await sb.from("users").select("*").eq('email', email);
       return { data, error}
     },
 
