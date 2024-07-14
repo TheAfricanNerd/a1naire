@@ -6,7 +6,7 @@ import { v4 as uuidv4 } from 'uuid';
 // Create a single supabase client for interacting with your database
 
 export const supaBase = () => {
-  const [url, key] = [
+  const [supabaseUrl, key] = [
     import.meta.env.VITE_SUPABASE_URL,
     import.meta.env.VITE_SUPABASE_API_KEY,
   ];
@@ -24,7 +24,7 @@ export const supaBase = () => {
     },
   };
 
-  const supabase = createClient<Database>(<string>url, <string>key, options);
+  const supabase = createClient<Database>(<string>supabaseUrl, <string>key, options);
   return supabase;
 };
 

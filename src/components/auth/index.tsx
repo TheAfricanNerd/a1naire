@@ -109,7 +109,7 @@ const Auth = ({ handleChange, handleSubmit, error, loading }: IAuth) => {
                   color: "white",
                 }}
                 containerClass="border-2 w-full block !min-h-5 bg-[#212121] border-white"
-                country={"US"}
+                country={"us"}
                 disableCountryCode
                 onlyCountries={["us"]}
                 value={phone}
