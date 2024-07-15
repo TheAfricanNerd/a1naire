@@ -13,7 +13,7 @@ import Productivity from "../../components/Productivity";
 import DynamicFreedom from "../../components/DynamicFreedom";
 import BetterThanOwning from "../../components/BetterThanOwning";
 import UltraLuxryYouDeserve from "../../components/UltraLuxryYouDeserve";
-import PaparazziMedia from "../../components/PaparazziMedia";
+// import PaparazziMedia from "../../components/PaparazziMedia";
 import Music from "../../components/Music";
 import LimitedAdditions from "../../components/LimitedAdditions";
 import MyGallery from "../../components/MyGallery";
@@ -144,7 +144,7 @@ const Homepage = () => {
           <DynamicFreedom />
           <BetterThanOwning />
           <UltraLuxryYouDeserve />
-          <PaparazziMedia />
+          {/* <PaparazziMedia /> */}
           <Music />
           <LimitedAdditions />
           {/* bottom section */}
