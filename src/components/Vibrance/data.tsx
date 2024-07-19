@@ -9,6 +9,7 @@ import {
   VIBRANCE9,
   VIBRANCE7,
   VIBRANCE10,
+  VIBRANCE11,
 } from "../../assets/images";
 
 export default {
@@ -71,6 +72,13 @@ export default {
       h2: "It will forever change how you move around Miami",
       p: "some Paragraph text",
       image: VIBRANCE6,
+    },
+
+    {
+      id: 10,
+      h2: "It will forever change how you move around Miami",
+      p: "some Paragraph text",
+      image: VIBRANCE11,
     },
   ],
 };
