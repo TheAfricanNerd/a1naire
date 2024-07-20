@@ -79,6 +79,14 @@ const MyGallery = ({ reference }: IGallery) => {
           Start Using A1naire
         </button>
       </Link>
+
+      <section className="">
+        <h3 className="text-3xl text-center">Contact us</h3>
+
+        <div className="text-center text-xl mb-10">
+          <Link to={"mailto:discover@a1naire.com"}>Discover@a1naire.com </Link>
+        </div>
+      </section>
     </div>
   );
 };
