@@ -9,6 +9,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Homepage from "./views/Homepage/index.tsx";
 import PdfViewer from "./views/Pdf";
 import { Supabase, SupaBaseContext } from "./database/index";
+import CarExperience from "./views/CarExperience/index.tsx";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
   {
     path: "/A1naire-customer-presentation",
     element: <PdfViewer />,
+  },
+  {
+    path: "/car-experience",
+    element: <CarExperience />,
   },
 ]);
 

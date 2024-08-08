@@ -27,6 +27,7 @@ import a1naire_rides from "./jpg/a1naireside.jpg";
 import other_rides1 from "./jpg/other-rides1.jpg";
 import other_rides2 from "./jpg/other-rides2.jpg";
 import music from "./jpg/music.jpg";
+import car_experience from "./jpg/car-experiences.jpg";
 
 import chevron_left from "./svg/chevron_left.svg";
 import chevron_right from "./svg/chevron_right.svg";
@@ -189,6 +190,10 @@ export const RAZI3: IImage = {
 export const RAZI4: IImage = {
   img: razi4,
   alt: "beyonce and jay",
+};
+export const CAR_EXPERIENCE: IImage = {
+  img: car_experience,
+  alt: "100 unique car experience page",
 };
 
 export const LOGO_BLACK: IImage = {
