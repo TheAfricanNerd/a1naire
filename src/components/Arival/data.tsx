@@ -16,10 +16,11 @@ export default {
       amazingly distinguished experience of arriving in one Ultra-Luxury vehicle
       and leaving in another. On any given day, you have the opportunity to ride
       at least 15 of the world's most Ultra-Luxurious vehicles,{" "}
-      <Link
+      <Link to="/car-experience" className=" text-blue-500">
+        {/* <Link
         to="https://tunjiafonja.com/execrider/website/100uniquecarexperiences.html"
         className=" text-blue-500"
-      >
+      > */}
         with over 50 unique car experiences.
       </Link>
     </p>

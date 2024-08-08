@@ -1,6 +1,6 @@
 import { useSearchParams } from "react-router-dom";
 import Auth from "../../components/auth";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import Header from "../../components/header";
 import CarGroup from "../../components/carGroup";
 import HowItWorks from "../../components/howItWorks";
@@ -85,6 +85,7 @@ const Homepage = () => {
 
       if (user && user.length > 0) {
         window.alert("welcome back!");
+        sessionStorage.setItem("isLoggedIn", "1");
         setIsLoggedIn(true);
         return;
       }
@@ -120,6 +121,16 @@ const Homepage = () => {
     console.log(data);
     return 1;
   };
+
+  useEffect(() => {
+    const data = Boolean(sessionStorage.getItem("isLoggedIn"));
+    console.log(data);
+    if (data) {
+      setIsLoggedIn(true);
+    } else {
+      setIsLoggedIn(false);
+    }
+  }, []);
 
   return (
     <>

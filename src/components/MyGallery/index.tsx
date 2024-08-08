@@ -76,7 +76,7 @@ const MyGallery = ({ reference }: IGallery) => {
       </Link> */}
       <Link to={regLink}>
         <button className="block bg-black hover:bg-slate-900 text-2xl md:text-4xl rounded-md mx-auto drop-shadow-sm font-bold p-10 md:px-40 py-5 md:py-8 my-5 text-white cursor-pointer">
-          Start Using A1naire
+          Start Using Motion
         </button>
       </Link>
 
