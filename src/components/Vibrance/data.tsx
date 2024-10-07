@@ -15,8 +15,10 @@ import {
 export default {
   title: "Vivid Vibrance",
   image: ROLLS_WOMAN,
-  text:
-    "Our Fleet and Pilots bring vibrance thanks to the countless hours spent curating car paint combinations, interior materials and attire that inspire and bring vibrance to every ride.",
+  text: `Our Fleet and Pilots bring vibrance thanks to the countless hours spent curating car paint
+combinations, interior materials and attire that inspire and bring vibrance to every ride.`,
+  // text:
+  //   "Our Fleet and Pilots bring vibrance thanks to the countless hours spent curating car paint combinations, interior materials and attire that inspire and bring vibrance to every ride.",
   slides: [
     {
       id: 1,

@@ -49,6 +49,12 @@ const Homepage = () => {
   };
   const handleSubmit = async () => {
     setLoading(true);
+
+    // development code
+    // setIsLoggedIn(true);
+    // return;
+    // end of development code
+
     try {
       if (!email || email.length < 1) {
         window.alert("please provide an email");
@@ -143,7 +149,7 @@ const Homepage = () => {
         />
       ) : (
         <>
-          <Header />
+          <Header reference={reference} />
           <CarGroup />
           <HowItWorks />
           <UltraPilots />

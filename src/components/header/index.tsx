@@ -12,10 +12,18 @@ import data from "./data";
 // import { Link } from "react-router-dom";
 import useMedia from "../../hook/useMedia";
 import { ARROW_DOWN } from "../../assets/images";
+import { Link } from "react-router-dom";
 
-function Header() {
+interface IGallery {
+  reference: string | null;
+}
+
+function Header({ reference }: IGallery) {
   const isMobile = useMedia().isMobile;
 
+  const regLink = reference
+    ? `https://ride.a1naire.com/register?ref=${reference}`
+    : `https://ride.a1naire.com/register`;
   // bounce
   const bounceVariants = {
     initial: {
@@ -78,7 +86,7 @@ function Header() {
           {/* end of video section */}
 
           {/* text section */}
-          <div className="right md:w-1/2 w-[80%] top-10">
+          <div className="right md:w-1/2 w-[80%] top-10 ">
             <motion.div
               variants={CHILD_ANIMATION({ delayChild: 1.3 })}
               className="carosel-text text-center"
@@ -114,12 +122,28 @@ function Header() {
                 </Link>
               </div> */}
             </motion.div>
+
+            <Link to={regLink}>
+              <button className="block md:bg-black bg-white hover:bg-slate-900 text-3xl md:text-2xl rounded-md mx-auto drop-shadow-sm font-bold p-10 md:px-40 py-3 md:py-5 my-5 md:text-white text-black cursor-pointer">
+                Book a ride
+              </button>
+            </Link>
+
+            <div className="md:hidden block w-full">
+              <Slider {...settings}>
+                <div className="">
+                  <p className=" text-white md:text-black text-2xl md:text-2xl w-full mx-auto my-5 text-center ">
+                    Scroll down to learn more
+                  </p>
+                </div>
+              </Slider>
+            </div>
           </div>
 
           {/* end of text section */}
         </div>
 
-        <div className="absolute bottom-10 self-center left-[50%] -translate-x-[50%]">
+        <div className="absolute bottom-10 self-center left-[50%] -translate-x-[50%] md:hidden flex">
           <motion.div
             initial="initial"
             animate="bounce"

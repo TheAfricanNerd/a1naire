@@ -9,7 +9,8 @@ interface ISlide {
 const data: Array<ISlide> = [
   {
     id: 1,
-    h2: "Works like Uber, but with the world's most ultra-luxurious vehicles and game changing features. Scroll down to learn more",
+    h2:
+      "Works like Uber, but with the world's most ultra-luxurious vehicles and game changing features.",
     p: "some Paragraph text",
   },
 ];

@@ -13,13 +13,18 @@ import {
 } from "../../assets/images";
 
 export default {
-  title: "Your Own Digital Plate",
+  title: "For our Icon Members: Your Own Digital Plate",
   image: ROLLS_WOMAN,
-  text: ` The world’s first customizable digital plate is a brilliant combination
-  of function and experience. It provides a unique bonding between the
-  Ultra-Luxury vehicle and you by allowing you to have the digital plate
-  display your name, nickname, emblem and anything in between for any
-  ride. This makes your arrival a uniquely distinguished presence.`,
+  text: `The world’s first customizable digital plate is a brilliant combination of function and experience. It
+will be available to our Icon Members. It provides a unique bonding between the Ultra-Luxury
+vehicle and you by allowing you to have the digital plate display your name, nickname, emblem
+and anything in between for any ride. This makes your arrival a uniquely distinguished
+presence.`,
+  // text: ` The world’s first customizable digital plate is a brilliant combination
+  // of function and experience. It provides a unique bonding between the
+  // Ultra-Luxury vehicle and you by allowing you to have the digital plate
+  // display your name, nickname, emblem and anything in between for any
+  // ride. This makes your arrival a uniquely distinguished presence.`,
   slide1: [
     {
       id: 1,
@@ -29,7 +34,8 @@ export default {
     },
     {
       id: 2,
-      h2: "Works like Uber, but with the world's most ultra-luxurious vehicles and game changing features",
+      h2:
+        "Works like Uber, but with the world's most ultra-luxurious vehicles and game changing features",
       p: "some Paragraph text",
       image: DAKITI,
     },
@@ -74,7 +80,8 @@ export default {
     // },
     {
       id: 2,
-      h2: "Works like Uber, but with the world's most ultra-luxurious vehicles and game changing features",
+      h2:
+        "Works like Uber, but with the world's most ultra-luxurious vehicles and game changing features",
       p: "some Paragraph text",
       image: PERSON_DRIP2HARD,
     },
