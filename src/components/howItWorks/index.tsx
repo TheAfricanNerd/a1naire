@@ -16,9 +16,9 @@ const HowItWorks = () => {
           </Text>
         </div>
 
-        <div className="w-auto mx-auto md:w-1/2 ">
+        {/* <div className="w-auto mx-auto md:w-1/2 ">
           <img src={data.image.img} alt={data.image.alt} className=" w-full" />
-        </div>
+        </div> */}
       </Container>
     </>
   );
