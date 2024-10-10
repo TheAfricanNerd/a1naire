@@ -1433,6 +1433,10 @@ video {
   line-height: 2;
 }
 
+.leading-normal {
+  line-height: 1.5;
+}
+
 .\!text-black {
   --tw-text-opacity: 1 !important;
   color: rgb(0 0 0 / var(--tw-text-opacity)) !important;
