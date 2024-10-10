@@ -138,9 +138,10 @@ const Homepage = () => {
     }
   }, []);
 
+  const tempPasswordBypass = false;
   return (
     <>
-      {!isLoggedIn ? (
+      {tempPasswordBypass ? (
         <Auth
           handleChange={handleChange}
           handleSubmit={handleSubmit}
