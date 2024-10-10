@@ -6,7 +6,7 @@ import LOGO_BLACK from "../../assets/images/png/a1naire-logo-black.png";
 // import ENVELOP from "../../assets/images/svg/envelop-black.svg";
 import { CHILD_ANIMATION, PARENT_ANIMATION } from "../../utils";
 import Video from "../../assets/videos/bg_video.mp4";
-import Slider from "react-slick";
+// import Slider from "react-slick";
 import data from "./data";
 // import Button, { Outline } from "../button";
 // import { Link } from "react-router-dom";
@@ -39,16 +39,16 @@ function Header({ reference }: IGallery) {
   };
 
   // this is two
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    autoplaySpeed: 8000,
-    slidesToShow: 1,
-    autoplay: true,
-    arrows: false,
-    dotsClass: isMobile ? "mobile-dots" : "desktop-dots",
-  };
+  // const settings = {
+  //   dots: true,
+  //   infinite: true,
+  //   speed: 500,
+  //   autoplaySpeed: 8000,
+  //   slidesToShow: 1,
+  //   autoplay: true,
+  //   arrows: false,
+  //   dotsClass: isMobile ? "mobile-dots" : "desktop-dots",
+  // };
   //  this is one
 
   return (
@@ -97,7 +97,7 @@ function Header({ reference }: IGallery) {
                 className="mx-auto my-10"
                 width={200}
               />
-              <Slider {...settings}>
+              {/* <Slider {...settings}>
                 {data.map((item) => (
                   <div key={item.id}>
                     <h2 className="text-white md:text-black text-2xl md:text-4xl w-[100%] md:w-2/3 mx-auto my-2">
@@ -105,7 +105,17 @@ function Header({ reference }: IGallery) {
                     </h2>
                   </div>
                 ))}
-              </Slider>
+              </Slider> */}
+
+              <div>
+                {data.map((item) => (
+                  <div key={item.id}>
+                    <h2 className="text-white md:text-black text-2xl md:text-4xl w-[100%] md:w-2/3 mx-auto my-2">
+                      {item.h2}
+                    </h2>
+                  </div>
+                ))}
+              </div>
 
               {/* <div className="buttons flex flex-col items-center mt-7 md:w-1/2 w-full mx-auto">
                 <Link
@@ -128,13 +138,31 @@ function Header({ reference }: IGallery) {
                 Book a ride
               </button>
             </Link>
+
+            {/* <div className="mx-auto w-max mt-20"> */}
+            <motion.section
+              variants={PARENT_ANIMATION()}
+              initial="hidden"
+              animate="visible"
+              className="mx-auto w-max mt-20"
+            >
+              <motion.div
+                initial="initial"
+                animate="bounce"
+                variants={bounceVariants}
+              >
+                <img src={ARROW_DOWN.img} alt={ARROW_DOWN.alt} />
+              </motion.div>
+            </motion.section>
+            {/* </div> */}
           </div>
 
           {/* end of text section */}
         </div>
 
         <div>
-          <div className="absolute bottom-20 self-center left-[50%] -translate-x-[50%] md:hidden flex ">
+          {/* <div className="absolute bottom-20 self-center left-[50%] -translate-x-[50%] md:hidden flex "> */}
+          {/* <div>
             <motion.div
               initial="initial"
               animate="bounce"
@@ -142,7 +170,7 @@ function Header({ reference }: IGallery) {
             >
               <img src={ARROW_DOWN.img} alt={ARROW_DOWN.alt} />
             </motion.div>
-          </div>
+          </div> */}
         </div>
 
         {/* <div>Scroll down to learn more</div> */}
