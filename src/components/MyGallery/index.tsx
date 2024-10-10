@@ -39,9 +39,10 @@ const MyGallery = ({ reference }: IGallery) => {
     { image: TWELVE, isLimited: true },
   ];
 
+  //  ? `https://ride.a1naire.com/register?ref=${reference}`
   const regLink = reference
     ? `https://ride.a1naire.com/register?ref=${reference}`
-    : `https://ride.a1naire.com/register`;
+    : `https://ride.a1naire.com/`;
   return (
     <div className="">
       <Section>
@@ -76,7 +77,7 @@ const MyGallery = ({ reference }: IGallery) => {
       </Link> */}
       <Link to={regLink}>
         <button className="block bg-black hover:bg-slate-900 text-2xl md:text-4xl rounded-md mx-auto drop-shadow-sm font-bold p-10 md:px-40 py-5 md:py-8 my-5 text-white cursor-pointer">
-          Start Using Motion
+          Book a ride
         </button>
       </Link>
 

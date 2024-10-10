@@ -23,7 +23,7 @@ function Header({ reference }: IGallery) {
 
   const regLink = reference
     ? `https://ride.a1naire.com/register?ref=${reference}`
-    : `https://ride.a1naire.com/register`;
+    : `https://ride.a1naire.com`;
   // bounce
   const bounceVariants = {
     initial: {
@@ -100,7 +100,7 @@ function Header({ reference }: IGallery) {
               <Slider {...settings}>
                 {data.map((item) => (
                   <div key={item.id}>
-                    <h2 className="text-white md:text-black text-2xl md:text-4xl w-[100%] md:w-2/3 mx-auto my-5">
+                    <h2 className="text-white md:text-black text-2xl md:text-4xl w-[100%] md:w-2/3 mx-auto my-2">
                       {item.h2}
                     </h2>
                   </div>
@@ -128,30 +128,24 @@ function Header({ reference }: IGallery) {
                 Book a ride
               </button>
             </Link>
-
-            <div className="md:hidden block w-full">
-              <Slider {...settings}>
-                <div className="">
-                  <p className=" text-white md:text-black text-2xl md:text-2xl w-full mx-auto my-5 text-center ">
-                    Scroll down to learn more
-                  </p>
-                </div>
-              </Slider>
-            </div>
           </div>
 
           {/* end of text section */}
         </div>
 
-        <div className="absolute bottom-10 self-center left-[50%] -translate-x-[50%] md:hidden flex">
-          <motion.div
-            initial="initial"
-            animate="bounce"
-            variants={bounceVariants}
-          >
-            <img src={ARROW_DOWN.img} alt={ARROW_DOWN.alt} />
-          </motion.div>
+        <div>
+          <div className="absolute bottom-20 self-center left-[50%] -translate-x-[50%] md:hidden flex ">
+            <motion.div
+              initial="initial"
+              animate="bounce"
+              variants={bounceVariants}
+            >
+              <img src={ARROW_DOWN.img} alt={ARROW_DOWN.alt} />
+            </motion.div>
+          </div>
         </div>
+
+        {/* <div>Scroll down to learn more</div> */}
       </motion.section>
     </>
   );
