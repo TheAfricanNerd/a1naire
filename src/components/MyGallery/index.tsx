@@ -78,7 +78,7 @@ const MyGallery = ({ reference }: IGallery) => {
       </Link>
 
       <Link to={waitlistLink}>
-        <button className="block border-4 border-black  text-xl md:text-2xl rounded-md mx-auto drop-shadow-sm font-bold  md:px-40 py-3 md:py-5 my-5 md:text-black  cursor-pointer md:w-[30%] md:max-w-[70%] w-[90%]">
+        <button className="block border-4 border-black  text-xl md:text-2xl rounded-md mx-auto drop-shadow-sm font-bold  md:px-10 py-3 md:py-5 my-5 md:text-black  cursor-pointer md:w-[30%] md:max-w-[70%] w-[90%]">
           Inquire about membership
         </button>
       </Link>

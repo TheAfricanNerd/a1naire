@@ -96,7 +96,7 @@ function Header({ reference }: IGallery) {
               <img
                 src={isMobile ? LOGO : LOGO_BLACK}
                 alt={"black logo"}
-                className="mx-auto my-10 md:w-auto w-[45%]"
+                className="mx-auto my-10 md:w-[25%] w-[45%]"
                 width={200}
               />
 
@@ -121,7 +121,7 @@ function Header({ reference }: IGallery) {
             </Link>
 
             <Link to={waitlistLink}>
-              <button className="block border-4 md:border-black border-white text-md md:text-2xl rounded-md mx-auto drop-shadow-sm font-bold  md:px-40 py-3 md:py-5 my-5 md:text-black text-white cursor-pointer md:w-2/3 md:max-w-[70%] w-[90%]">
+              <button className="block border-4 md:border-black border-white text-md md:text-2xl rounded-md mx-auto drop-shadow-sm font-bold  md:px-10 py-3 md:py-5 my-5 md:text-black text-white cursor-pointer md:w-2/3 md:max-w-[70%] w-[90%]">
                 Inquire about membership
               </button>
             </Link>

@@ -1727,6 +1727,14 @@ video {
     width: 30%;
   }
 
+  .md\:w-\[20\%\] {
+    width: 20%;
+  }
+
+  .md\:w-\[25\%\] {
+    width: 25%;
+  }
+
   .md\:max-w-\[70\%\] {
     max-width: 70%;
   }
@@ -1815,6 +1823,11 @@ video {
   .md\:py-5 {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
+  }
+
+  .md\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 
   .md\:pb-5 {
