@@ -17,6 +17,7 @@ import {
 import Section from "../Section";
 import Text from "../Text";
 import Title from "../Title";
+import { waitlistLink } from "../header";
 // import Button from "../button";
 // import Container from "../Container";
 
@@ -71,8 +72,14 @@ const MyGallery = ({ reference }: IGallery) => {
       </Section>
 
       <Link to={regLink}>
-        <button className="block bg-black hover:bg-slate-900 text-2xl md:text-4xl rounded-md mx-auto drop-shadow-sm font-bold p-10 md:px-40 py-5 md:py-8 my-5 text-white cursor-pointer">
+        <button className="block bg-black hover:bg-slate-900 text-xl md:text-2xl rounded-md mx-auto drop-shadow-sm font-bold p-10 md:px-40 py-3 md:py-5 my-5 text-white cursor-pointer md:w-[30%] md:max-w-[70%] w-[90%]">
           Book a ride
+        </button>
+      </Link>
+
+      <Link to={waitlistLink}>
+        <button className="block border-4 border-black  text-xl md:text-2xl rounded-md mx-auto drop-shadow-sm font-bold  md:px-40 py-3 md:py-5 my-5 md:text-black  cursor-pointer md:w-[30%] md:max-w-[70%] w-[90%]">
+          Inquire about membership
         </button>
       </Link>
 

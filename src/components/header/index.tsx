@@ -96,17 +96,17 @@ function Header({ reference }: IGallery) {
               <img
                 src={isMobile ? LOGO : LOGO_BLACK}
                 alt={"black logo"}
-                className="mx-auto my-10"
+                className="mx-auto my-10 md:w-auto w-[45%]"
                 width={200}
               />
 
               <div>
                 {data.map((item) => (
                   <div key={item.id}>
-                    <h1 className="text-white md:text-black text-4xl md:text-5xl leading-normal font-semibold w-[100%] md:w-2/3 mx-auto my-2">
+                    <h1 className="text-white md:text-black text-2xl md:text-5xl leading-normal font-semibold w-[100%] md:w-2/3 mx-auto my-2">
                       An Ultra-Luxury Ride Hailing Membership Club
                     </h1>
-                    <h2 className="text-white md:text-black text-2xl md:text-4xl w-[100%] md:w-2/3 mx-auto my-5">
+                    <h2 className="text-white md:text-black text-xl md:text-4xl w-[100%] md:w-2/3 mx-auto my-5">
                       {item.h2}
                     </h2>
                   </div>
@@ -115,14 +115,14 @@ function Header({ reference }: IGallery) {
             </motion.div>
 
             <Link to={regLink}>
-              <button className="block md:bg-black bg-white hover:bg-slate-900 text-3xl md:text-2xl rounded-md mx-auto drop-shadow-sm font-bold p-10 md:px-40 py-3 md:py-5 my-5 md:text-white text-black cursor-pointer md:w-2/3 md:max-w-[70%] w-[90%]">
+              <button className="block md:bg-black bg-white hover:bg-slate-900 text-xl md:text-2xl rounded-md mx-auto drop-shadow-sm font-bold p-10 md:px-40 py-3 md:py-5 my-5 md:text-white text-black cursor-pointer md:w-2/3 md:max-w-[70%] w-[90%]">
                 Book a ride
               </button>
             </Link>
 
             <Link to={waitlistLink}>
-              <button className="block border-4 md:border-black border-white text-3xl md:text-2xl rounded-md mx-auto drop-shadow-sm font-bold p-10 md:px-40 py-3 md:py-5 my-5 md:text-black text-white cursor-pointer md:w-2/3 md:max-w-[70%] w-[90%]">
-                Inquire about <br /> membership
+              <button className="block border-4 md:border-black border-white text-md md:text-2xl rounded-md mx-auto drop-shadow-sm font-bold  md:px-40 py-3 md:py-5 my-5 md:text-black text-white cursor-pointer md:w-2/3 md:max-w-[70%] w-[90%]">
+                Inquire about membership
               </button>
             </Link>
 
@@ -137,8 +137,13 @@ function Header({ reference }: IGallery) {
                 initial="initial"
                 animate="bounce"
                 variants={bounceVariants}
+                className="flex justify-center"
               >
-                <img src={ARROW_DOWN.img} alt={ARROW_DOWN.alt} />
+                <img
+                  src={ARROW_DOWN.img}
+                  alt={ARROW_DOWN.alt}
+                  className="w-3/5"
+                />
               </motion.div>
             </motion.section>
             {/* </div> */}
