@@ -14,6 +14,7 @@ import useMedia from "../../hook/useMedia";
 import { ARROW_DOWN } from "../../assets/images";
 import { Link } from "react-router-dom";
 
+export const waitlistLink = "https://getwaitlist.com/waitlist/18649";
 interface IGallery {
   reference: string | null;
 }
@@ -25,6 +26,7 @@ function Header({ reference }: IGallery) {
     ? `https://ride.a1naire.com/register?ref=${reference}`
     : `https://ride.a1naire.com`;
   // bounce
+
   const bounceVariants = {
     initial: {
       y: 0,
@@ -97,15 +99,6 @@ function Header({ reference }: IGallery) {
                 className="mx-auto my-10"
                 width={200}
               />
-              {/* <Slider {...settings}>
-                {data.map((item) => (
-                  <div key={item.id}>
-                    <h2 className="text-white md:text-black text-2xl md:text-4xl w-[100%] md:w-2/3 mx-auto my-2">
-                      {item.h2}
-                    </h2>
-                  </div>
-                ))}
-              </Slider> */}
 
               <div>
                 {data.map((item) => (
@@ -119,26 +112,17 @@ function Header({ reference }: IGallery) {
                   </div>
                 ))}
               </div>
-
-              {/* <div className="buttons flex flex-col items-center mt-7 md:w-1/2 w-full mx-auto">
-                <Link
-                  to={"https://getwaitlist.com/waitlist/11137"}
-                  className="w-full"
-                >
-                  <Button dark>Join the Waitlist</Button>
-                </Link>
-                <Link to={"mailto:discover@a1naire.com"} className="w-full">
-                  <Outline color="white">
-                    <img src={ENVELOP} alt="envelop" />
-                    Contact us
-                  </Outline>
-                </Link>
-              </div> */}
             </motion.div>
 
             <Link to={regLink}>
-              <button className="block md:bg-black bg-white hover:bg-slate-900 text-3xl md:text-2xl rounded-md mx-auto drop-shadow-sm font-bold p-10 md:px-40 py-3 md:py-5 my-5 md:text-white text-black cursor-pointer">
+              <button className="block md:bg-black bg-white hover:bg-slate-900 text-3xl md:text-2xl rounded-md mx-auto drop-shadow-sm font-bold p-10 md:px-40 py-3 md:py-5 my-5 md:text-white text-black cursor-pointer md:w-2/3 md:max-w-[70%] w-[90%]">
                 Book a ride
+              </button>
+            </Link>
+
+            <Link to={waitlistLink}>
+              <button className="block border-4 md:border-black border-white text-3xl md:text-2xl rounded-md mx-auto drop-shadow-sm font-bold p-10 md:px-40 py-3 md:py-5 my-5 md:text-black text-white cursor-pointer md:w-2/3 md:max-w-[70%] w-[90%]">
+                Inquire about <br /> membership
               </button>
             </Link>
 
@@ -163,18 +147,7 @@ function Header({ reference }: IGallery) {
           {/* end of text section */}
         </div>
 
-        <div>
-          {/* <div className="absolute bottom-20 self-center left-[50%] -translate-x-[50%] md:hidden flex "> */}
-          {/* <div>
-            <motion.div
-              initial="initial"
-              animate="bounce"
-              variants={bounceVariants}
-            >
-              <img src={ARROW_DOWN.img} alt={ARROW_DOWN.alt} />
-            </motion.div>
-          </div> */}
-        </div>
+        <div></div>
 
         {/* <div>Scroll down to learn more</div> */}
       </motion.section>

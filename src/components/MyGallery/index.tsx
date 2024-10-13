@@ -70,11 +70,6 @@ const MyGallery = ({ reference }: IGallery) => {
         </div>
       </Section>
 
-      {/* <Link to={regLink}>
-        <button className="block bg-[#42b72a] hover:bg-[#42b72ac5] text-2xl md:text-4xl rounded-md mx-auto drop-shadow-sm font-bold p-10 md:px-40 py-5 md:py-8 my-5 text-white cursor-pointer">
-          Start Using A1naire
-        </button>
-      </Link> */}
       <Link to={regLink}>
         <button className="block bg-black hover:bg-slate-900 text-2xl md:text-4xl rounded-md mx-auto drop-shadow-sm font-bold p-10 md:px-40 py-5 md:py-8 my-5 text-white cursor-pointer">
           Book a ride
@@ -85,7 +80,9 @@ const MyGallery = ({ reference }: IGallery) => {
         <h3 className="text-3xl text-center">Contact us</h3>
 
         <div className="text-center text-xl mb-10">
-          <Link to={"mailto:discover@a1naire.com"}>Discover@a1naire.com </Link>
+          <Link to={"mailto:discover@a1naire.com"}>Discover@a1naire.com </Link>{" "}
+          <br />
+          <Link to={"tel:305-981-6790"}>305-981-6790</Link>
         </div>
       </section>
     </div>
