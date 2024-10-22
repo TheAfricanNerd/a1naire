@@ -9,10 +9,7 @@ import {
 export default {
   title: <span>Open Air and Innovative Configurations</span>,
   images: [PILOT1, PILOT2],
-  text: `With our unending desire to offer the pinnacle of Ultra-Luxury transportation, we further
-customize our vehicles. These include a customized Rolls-Royce Dawn for an open air
-experience along with a specially configured Ferrari GTC4Lusso for a thrilling experience unlike
-any other.`,
+  text: `With our unending desire to offer the pinnacle of Ultra-Luxury ride hailing, we further customize certain vehicles for a thrilling experience unlike any other.`,
   // text: "With our unending desire to offer the pinnacle of Ultra-Luxury ride hailing, we further customize our vehicles. These include a customized Rolls-Royce Dawn for an open air experience along with a specially configured Ferrari GTC4Lusso for a thrilling experience unlike any other.",
   slides: [
     {

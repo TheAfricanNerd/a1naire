@@ -72,11 +72,12 @@ const SectionWithTwoImages = ({
                   className=" w-full"
                 />
               ) : (
-                <FadeSlider data={data?.slide2} />
+                // <FadeSlider data={data?.slide2} />
+                <></>
               )}
-              <p className="text-sm italic mx-[7.5%] my-2">
+              {/* <p className="text-sm italic mx-[7.5%] my-2">
                 This feature arrives in Q3 of 2024
-              </p>
+              </p> */}
             </div>
           </div>
         </Container>

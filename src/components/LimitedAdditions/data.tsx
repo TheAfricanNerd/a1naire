@@ -8,9 +8,8 @@ export default {
   text: (
     <>
       <p>
-        For limited periods on our ride hailing service, we add some of the most
-        iconic and culturally significant vehicles to our fleet. These range
-        from rare Rolls-Royce models to the Maybachs of global superstars.
+        For limited periods on our ride hailing service, we will add some of the
+        most iconic and culturally significant vehicles to our fleet.
       </p>
     </>
   ),
