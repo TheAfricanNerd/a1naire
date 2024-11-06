@@ -38,7 +38,7 @@ const SectionWithTwoImages = ({
       <>
         <Container white={white} flex={flex} className={className}>
           <div className={`w-auto mx-auto ${white && "text-white"}`}>
-            <Title>{data?.title}</Title>
+            <Title className="text-gold">{data?.title}</Title>
             {/* images section */}
             {!isSlide ? (
               <div className="flex gap-5 w-full">

@@ -8,7 +8,9 @@ const UltraPilots = () => {
     <>
       <Container flex>
         <div className="w-auto mx-auto">
-          <Title right>{data.title}</Title>
+          <Title right className="text-gold">
+            {data.title}
+          </Title>
           {/* images section */}
           <div className="flex flex-col md:flex-row md:gap-5 gap-0 w-full">
             {data.images.map((image, i) => (

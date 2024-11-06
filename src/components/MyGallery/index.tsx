@@ -18,6 +18,7 @@ import Section from "../Section";
 import Text from "../Text";
 import Title from "../Title";
 import { waitlistLink } from "../header";
+import FoundingIcons from "../FoundingIcon";
 // import Button from "../button";
 // import Container from "../Container";
 
@@ -71,6 +72,9 @@ const MyGallery = ({ reference }: IGallery) => {
           ))}
         </div>
       </Section>
+
+      {/* Founding Icon membership */}
+      <FoundingIcons />
 
       <Link to={regLink}>
         <button className="block bg-black hover:bg-slate-900 text-xl md:text-2xl rounded-md mx-auto drop-shadow-sm font-bold p-10 md:px-40 py-3 md:py-5 my-5 text-white cursor-pointer md:w-[30%] md:max-w-[70%] w-[90%]">
