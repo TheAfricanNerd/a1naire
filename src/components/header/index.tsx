@@ -6,7 +6,7 @@ import LOGO_BLACK from "../../assets/images/png/a1naire-logo-black.png";
 // import ENVELOP from "../../assets/images/svg/envelop-black.svg";
 import { CHILD_ANIMATION, PARENT_ANIMATION } from "../../utils";
 import Video from "../../assets/videos/bg_video.mp4";
-import Slider from "react-slick";
+// import Slider from "react-slick";
 import data from "./data";
 // import Button, { Outline } from "../button";
 // import { Link } from "react-router-dom";
@@ -14,6 +14,7 @@ import useMedia from "../../hook/useMedia";
 import { ARROW_DOWN } from "../../assets/images";
 import { Link } from "react-router-dom";
 
+export const waitlistLink = "https://getwaitlist.com/waitlist/18649";
 interface IGallery {
   reference: string | null;
 }
@@ -25,6 +26,7 @@ function Header({ reference }: IGallery) {
     ? `https://ride.a1naire.com/register?ref=${reference}`
     : `https://ride.a1naire.com`;
   // bounce
+
   const bounceVariants = {
     initial: {
       y: 0,
@@ -39,16 +41,16 @@ function Header({ reference }: IGallery) {
   };
 
   // this is two
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    autoplaySpeed: 8000,
-    slidesToShow: 1,
-    autoplay: true,
-    arrows: false,
-    dotsClass: isMobile ? "mobile-dots" : "desktop-dots",
-  };
+  // const settings = {
+  //   dots: true,
+  //   infinite: true,
+  //   speed: 500,
+  //   autoplaySpeed: 8000,
+  //   slidesToShow: 1,
+  //   autoplay: true,
+  //   arrows: false,
+  //   dotsClass: isMobile ? "mobile-dots" : "desktop-dots",
+  // };
   //  this is one
 
   return (
@@ -94,56 +96,63 @@ function Header({ reference }: IGallery) {
               <img
                 src={isMobile ? LOGO : LOGO_BLACK}
                 alt={"black logo"}
-                className="mx-auto my-10"
+                className="mx-auto my-10 md:w-[25%] w-[45%]"
                 width={200}
               />
-              <Slider {...settings}>
+
+              <div>
                 {data.map((item) => (
                   <div key={item.id}>
-                    <h2 className="text-white md:text-black text-2xl md:text-4xl w-[100%] md:w-2/3 mx-auto my-2">
+                    <h1 className="text-white md:text-black text-2xl md:text-5xl leading-normal font-semibold w-[100%] md:w-2/3 mx-auto my-2">
+                      An Ultra-Luxury Ride Hailing Membership Club
+                    </h1>
+                    <h2 className="text-white md:text-black text-xl md:text-4xl w-[100%] md:w-2/3 mx-auto my-5">
                       {item.h2}
                     </h2>
                   </div>
                 ))}
-              </Slider>
-
-              {/* <div className="buttons flex flex-col items-center mt-7 md:w-1/2 w-full mx-auto">
-                <Link
-                  to={"https://getwaitlist.com/waitlist/11137"}
-                  className="w-full"
-                >
-                  <Button dark>Join the Waitlist</Button>
-                </Link>
-                <Link to={"mailto:discover@a1naire.com"} className="w-full">
-                  <Outline color="white">
-                    <img src={ENVELOP} alt="envelop" />
-                    Contact us
-                  </Outline>
-                </Link>
-              </div> */}
+              </div>
             </motion.div>
 
             <Link to={regLink}>
-              <button className="block md:bg-black bg-white hover:bg-slate-900 text-3xl md:text-2xl rounded-md mx-auto drop-shadow-sm font-bold p-10 md:px-40 py-3 md:py-5 my-5 md:text-white text-black cursor-pointer">
+              <button className="block md:bg-black bg-white hover:bg-slate-900 text-xl md:text-2xl rounded-md mx-auto drop-shadow-sm font-bold p-10 md:px-40 py-3 md:py-5 my-5 md:text-white text-black cursor-pointer md:w-2/3 md:max-w-[70%] w-[90%]">
                 Book a ride
               </button>
             </Link>
+
+            <Link to={waitlistLink}>
+              <button className="block border-4 md:border-black border-white text-md md:text-2xl rounded-md mx-auto drop-shadow-sm font-bold  md:px-10 py-3 md:py-5 my-5 md:text-black text-white cursor-pointer md:w-2/3 md:max-w-[70%] w-[90%]">
+                Inquire about membership
+              </button>
+            </Link>
+
+            {/* <div className="mx-auto w-max mt-20"> */}
+            <motion.section
+              variants={PARENT_ANIMATION()}
+              initial="hidden"
+              animate="visible"
+              className="mx-auto w-max mt-20"
+            >
+              <motion.div
+                initial="initial"
+                animate="bounce"
+                variants={bounceVariants}
+                className="flex justify-center"
+              >
+                <img
+                  src={ARROW_DOWN.img}
+                  alt={ARROW_DOWN.alt}
+                  className="w-3/5"
+                />
+              </motion.div>
+            </motion.section>
+            {/* </div> */}
           </div>
 
           {/* end of text section */}
         </div>
 
-        <div>
-          <div className="absolute bottom-20 self-center left-[50%] -translate-x-[50%] md:hidden flex ">
-            <motion.div
-              initial="initial"
-              animate="bounce"
-              variants={bounceVariants}
-            >
-              <img src={ARROW_DOWN.img} alt={ARROW_DOWN.alt} />
-            </motion.div>
-          </div>
-        </div>
+        <div></div>
 
         {/* <div>Scroll down to learn more</div> */}
       </motion.section>

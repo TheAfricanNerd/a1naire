@@ -27,7 +27,7 @@ const Homepage = () => {
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const [loading, setLoading] = useState<boolean>(false);
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
   const [error, setError] = useState(false);
   const offer = searchParams.get("membershipoffer");
 
@@ -134,7 +134,8 @@ const Homepage = () => {
     if (data) {
       setIsLoggedIn(true);
     } else {
-      setIsLoggedIn(false);
+      setIsLoggedIn(true);
+      // setIsLoggedIn(false);
     }
   }, []);
 
