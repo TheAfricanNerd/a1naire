@@ -8,7 +8,7 @@ const Arival = () => {
     <>
       <Container flex>
         <div className="w-auto mx-auto">
-          <Title className="text-left text-gold">{data.title}</Title>
+          <Title className="text-left">{data.title}</Title>
           {/* images section */}
           <div className="flex gap-5 md:w-full w-mobile mx-auto">
             {data.images.map((image, i) => (

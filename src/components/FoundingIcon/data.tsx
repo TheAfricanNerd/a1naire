@@ -1,9 +1,7 @@
 import { ICON_MEMBERSHIP } from "../../assets/images";
 
 export default {
-  title: (
-    <span>Rare and Legendary Limited Additions for the Car Enthusiasts</span>
-  ),
+  title: <span>Founding Icon Membership Privileges</span>,
   image: ICON_MEMBERSHIP,
   text: (
     <p>

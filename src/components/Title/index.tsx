@@ -10,7 +10,7 @@ interface Props {
 
 const Title = ({ children, right = false, className, innerClass }: Props) => {
   return (
-    <div className={` ${className} my-2 md:my-5 text-gold`}>
+    <div className={` ${className} my-2 md:my-5 `}>
       <h1
         className={`
         ${innerClass &&

@@ -8,7 +8,7 @@ const UltraPilots = () => {
     <>
       <Container flex>
         <div className="w-auto mx-auto">
-          <Title right className="text-gold">
+          <Title right className="">
             {data.title}
           </Title>
           {/* images section */}
