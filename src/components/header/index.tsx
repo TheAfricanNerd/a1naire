@@ -103,6 +103,7 @@ function Header({ reference }: IGallery) {
               <div>
                 {data.map((item) => (
                   <div key={item.id}>
+                    {/* <h1 className="text-gold text-2xl md:text-5xl leading-normal font-semibold w-[100%] md:w-2/3 mx-auto my-2"> */}
                     <h1 className="text-white md:text-black text-2xl md:text-5xl leading-normal font-semibold w-[100%] md:w-2/3 mx-auto my-2">
                       An Ultra-Luxury Ride Hailing Membership Club
                     </h1>

@@ -165,8 +165,10 @@ const Homepage = () => {
           {/* <PaparazziMedia /> */}
           <Music />
           <LimitedAdditions />
+
           {/* bottom section */}
           <MyGallery reference={reference} />
+
           {offer && offer == "1" && <MembershipCohort />}
         </>
       )}

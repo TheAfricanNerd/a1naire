@@ -59,7 +59,7 @@ const SectionWithSlider = ({
       <>
         <Container flex={flex} my={["2", "2"]}>
           <div className="w-auto mx-auto">
-            <Title>{data?.title}</Title>
+            <Title className="">{data?.title}</Title>
             <div className="h-auto w-[95%] md:w-largeDesktop">
               <Slider ref={sliderRef} {...settings}>
                 {data?.slides?.map((item) => (

@@ -9,6 +9,7 @@ import openair1 from "./jpg/openair1.jpg";
 import openair2 from "./jpg/openair2.jpg";
 import openair3 from "./jpg/openair3.jpg";
 import logo_black from "./png/a1naire-logo-black.png";
+import icon_membership from "./png/icon-membership.png";
 
 import oride1 from "./jpg/oride/oride1.jpg";
 import oride2 from "./jpg/oride/oride2.jpg";
@@ -31,6 +32,7 @@ import car_experience from "./jpg/car-experiences.jpg";
 
 import chevron_left from "./svg/chevron_left.svg";
 import chevron_right from "./svg/chevron_right.svg";
+import instagram from "./svg/instagram.svg";
 
 import one from "./jpg/cars/one.jpg";
 import two from "./jpg/cars/two.jpg";
@@ -422,4 +424,13 @@ export const ELEVEN: IImage = {
 export const TWELVE: IImage = {
   img: twelve,
   alt: "Maybach Landaulet",
+};
+export const ICON_MEMBERSHIP: IImage = {
+  img: icon_membership,
+  alt: "icon membership",
+};
+
+export const INSTAGRAM: IImage = {
+  img: instagram,
+  alt: "instagram icon",
 };

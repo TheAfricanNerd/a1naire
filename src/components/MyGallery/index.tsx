@@ -5,6 +5,7 @@ import {
   ELEVEN,
   FIVE,
   FOUR,
+  INSTAGRAM,
   NINE,
   ONE,
   SEVEN,
@@ -18,6 +19,7 @@ import Section from "../Section";
 import Text from "../Text";
 import Title from "../Title";
 import { waitlistLink } from "../header";
+import FoundingIcons from "../FoundingIcon";
 // import Button from "../button";
 // import Container from "../Container";
 
@@ -72,6 +74,9 @@ const MyGallery = ({ reference }: IGallery) => {
         </div>
       </Section>
 
+      {/* Founding Icon membership */}
+      <FoundingIcons />
+
       <Link to={regLink}>
         <button className="block bg-black hover:bg-slate-900 text-xl md:text-2xl rounded-md mx-auto drop-shadow-sm font-bold p-10 md:px-40 py-3 md:py-5 my-5 text-white cursor-pointer md:w-[30%] md:max-w-[70%] w-[90%]">
           Book a ride
@@ -88,6 +93,19 @@ const MyGallery = ({ reference }: IGallery) => {
         <h3 className="text-3xl text-center">Contact us</h3>
 
         <div className="text-center text-xl mb-10">
+          <Link
+            className="flex gap-2 w-max mx-auto"
+            to={"https://www.instagram.com/a1naire/"}
+            target="_"
+          >
+            <img
+              className=""
+              width={20}
+              src={INSTAGRAM.img}
+              alt={INSTAGRAM.alt}
+            />
+            instagram
+          </Link>
           <Link to={"mailto:discover@a1naire.com"}>Discover@a1naire.com </Link>{" "}
           <br />
           <Link to={"tel:305-981-6790"}>305-981-6790</Link>
