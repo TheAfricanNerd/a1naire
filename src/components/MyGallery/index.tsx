@@ -5,6 +5,7 @@ import {
   ELEVEN,
   FIVE,
   FOUR,
+  INSTAGRAM,
   NINE,
   ONE,
   SEVEN,
@@ -92,6 +93,19 @@ const MyGallery = ({ reference }: IGallery) => {
         <h3 className="text-3xl text-center">Contact us</h3>
 
         <div className="text-center text-xl mb-10">
+          <Link
+            className="flex gap-2 w-max mx-auto"
+            to={"https://www.instagram.com/a1naire/"}
+            target="_"
+          >
+            <img
+              className=""
+              width={20}
+              src={INSTAGRAM.img}
+              alt={INSTAGRAM.alt}
+            />
+            instagram
+          </Link>
           <Link to={"mailto:discover@a1naire.com"}>Discover@a1naire.com </Link>{" "}
           <br />
           <Link to={"tel:305-981-6790"}>305-981-6790</Link>

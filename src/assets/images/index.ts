@@ -32,6 +32,7 @@ import car_experience from "./jpg/car-experiences.jpg";
 
 import chevron_left from "./svg/chevron_left.svg";
 import chevron_right from "./svg/chevron_right.svg";
+import instagram from "./svg/instagram.svg";
 
 import one from "./jpg/cars/one.jpg";
 import two from "./jpg/cars/two.jpg";
@@ -427,4 +428,9 @@ export const TWELVE: IImage = {
 export const ICON_MEMBERSHIP: IImage = {
   img: icon_membership,
   alt: "icon membership",
+};
+
+export const INSTAGRAM: IImage = {
+  img: instagram,
+  alt: "instagram icon",
 };
