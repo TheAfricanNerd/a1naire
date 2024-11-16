@@ -24,7 +24,9 @@ const InstagramEmbed = ({ width, igimage }: InstaInter) => {
         src={igimage?.image.img}
         alt={igimage?.image.alt}
         className="w-full rounded-2xl"
-        style={{ width: !isMobile ? width : width && width * 1.5 }}
+        style={{
+          width: !isMobile ? width : width && width * 1.5,
+        }}
       />
     </div>
   );

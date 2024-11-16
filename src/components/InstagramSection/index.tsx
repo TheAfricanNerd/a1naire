@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import InstagramEmbed from "../InstagramEmbed";
+// import InstagramEmbed from "../InstagramEmbed";
 import Slider from "react-slick";
 
 import useMedia from "../../hook/useMedia";
@@ -36,7 +36,7 @@ const InstagramSection = () => {
     console.log(console.log({ cref: cRef.current?.children[0] }));
 
     const w = cRef.current?.children[0].clientWidth ?? 1;
-    setSlideWidth(w / 4.45);
+    setSlideWidth(w / 4.1);
     // const w = cRef.current?.children[0].clientWidth ?? 1;
     // setSlideWidth(w / 4.45);
   }, []);
@@ -48,20 +48,34 @@ const InstagramSection = () => {
         </div>
         <Slider ref={sliderRef} {...settings}>
           {data.map((image) => (
-            <div
-              key={image.id}
-              className="p-4 w-full"
-              // style={{ width: !isMobile ? 900 : 220 }}
-            >
-              <Link to={image.link} target="_blank">
-                <InstagramEmbed igimage={image} width={slideWidth} />
-              </Link>
-            </div>
+            <span className="px-1" key={image.id}>
+              <img
+                src={image?.image.img}
+                alt={image?.image.alt}
+                className="w-full rounded-2xl"
+                style={{
+                  width: !isMobile
+                    ? slideWidth
+                    : slideWidth && slideWidth * 1.5,
+                }}
+              />
+            </span>
+
+            // <div
+            //   key={image.id}
+            //   className="p-4 w-full border-2 border-red-500"
+            //   // style={{ width: !isMobile ? 900 : 220 }}
+            // >
+            //   <Link to={image.link} target="_blank" className=" !m-0 !p-0">
+            //     <InstagramEmbed igimage={image} width={slideWidth} />
+
+            //   </Link>
+            // </div>
           ))}
         </Slider>
 
         <Link to={regLink} target="_blank">
-          <button className="block bg-black hover:bg-slate-900 text-xl md:text-2xl rounded-md mx-auto drop-shadow-sm font-bold p-2 md:px10 py-3 md:py-5 my-5 text-white cursor-pointer md:w-[30%] md:max-w-[70%] w-[90%]">
+          <button className="block border-2 border-black  text-xl md:text-2xl rounded-md mx-auto drop-shadow-sm font-bold  md:px-2 py-3 md:py-5 my-5 md:text-black  cursor-pointer md:w-[30%] md:max-w-[70%] w-[90%]">
             See more on Instagram @A1naire
           </button>
 

@@ -8,7 +8,7 @@
 }
 
 .slick-slide div div {
-  /* border: 1px solid green; */
+  border: 1px solid green; 
   padding-block: 5px !important;
   padding-inline: 10px !important;
 }
