@@ -48,7 +48,13 @@ const InstagramSection = () => {
         </div>
         <Slider ref={sliderRef} {...settings}>
           {data.map((image) => (
-            <span className="px-1" key={image.id}>
+            // <span className="" >
+            <Link
+              to={image.link}
+              target="_blank"
+              className="px-1"
+              key={image.id}
+            >
               <img
                 src={image?.image.img}
                 alt={image?.image.alt}
@@ -59,7 +65,8 @@ const InstagramSection = () => {
                     : slideWidth && slideWidth * 1.5,
                 }}
               />
-            </span>
+            </Link>
+            // </span>
 
             // <div
             //   key={image.id}
