@@ -44,8 +44,11 @@ const MyGallery = ({ reference }: IGallery) => {
 
   //  ? `https://ride.a1naire.com/register?ref=${reference}`
   const regLink = reference
-    ? `https://ride.a1naire.com/register?ref=${reference}`
-    : `https://ride.a1naire.com/`;
+    ? `https://ride.a1naire.com/reservations`
+    : `https://ride.a1naire.com/reservations`;
+  // const regLink = reference
+  //   ? `https://ride.a1naire.com/register?ref=${reference}`
+  //   : `https://ride.a1naire.com/`;
   return (
     <div className="">
       <Section>
