@@ -167,6 +167,7 @@ const Homepage = () => {
           <LimitedAdditions />
 
           {/* bottom section */}
+
           <MyGallery reference={reference} />
 
           {offer && offer == "1" && <MembershipCohort />}

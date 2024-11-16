@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import React, { LegacyRef, ReactNode } from "react";
 
 interface Props {
   children: ReactNode;
@@ -7,6 +7,7 @@ interface Props {
   white?: boolean;
   my?: number[] | string[];
   className?: string;
+  ref?: LegacyRef<HTMLDivElement> | undefined;
 }
 const Container = ({
   children,
@@ -14,9 +15,11 @@ const Container = ({
   white = false,
   hardFlex = false,
   className,
+  ref,
 }: Props) => {
   return (
     <div
+      ref={ref}
       className={`${className ? className : ""} 
       ${hardFlex ? "flex md:flex-row flex-row" : ""}
       md:w-largeDesktop w-full  mx-auto ${
