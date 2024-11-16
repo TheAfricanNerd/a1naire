@@ -10,8 +10,8 @@ import Arival from "../../components/Arival";
 import { NamePlate } from "../../components/NamePlate";
 import InnovativeConfigurations from "../../components/InnovativeConfigurations";
 import Productivity from "../../components/Productivity";
-import DynamicFreedom from "../../components/DynamicFreedom";
-import BetterThanOwning from "../../components/BetterThanOwning";
+// import DynamicFreedom from "../../components/DynamicFreedom";
+// import BetterThanOwning from "../../components/BetterThanOwning";
 import UltraLuxryYouDeserve from "../../components/UltraLuxryYouDeserve";
 // import PaparazziMedia from "../../components/PaparazziMedia";
 import Music from "../../components/Music";
@@ -159,8 +159,8 @@ const Homepage = () => {
           <NamePlate />
           <InnovativeConfigurations />
           <Productivity />
-          <DynamicFreedom />
-          <BetterThanOwning />
+          {/* <DynamicFreedom /> */}
+          {/* <BetterThanOwning /> */}
           <UltraLuxryYouDeserve />
           {/* <PaparazziMedia /> */}
           <Music />
