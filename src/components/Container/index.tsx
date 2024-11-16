@@ -1,4 +1,4 @@
-import React, { LegacyRef, ReactNode } from "react";
+import { LegacyRef, ReactNode } from "react";
 
 interface Props {
   children: ReactNode;
