@@ -15,6 +15,11 @@ import oride1 from "./jpg/oride/oride1.jpg";
 import oride2 from "./jpg/oride/oride2.jpg";
 import oride3 from "./jpg/oride/oride3.jpg";
 
+import IGImage1 from "./jpg/instagram/1.jpg";
+import IGImage2 from "./jpg/instagram/2.jpg";
+import IGImage3 from "./jpg/instagram/3.jpg";
+import IGImage4 from "./jpg/instagram/4.jpg";
+
 import productivity1 from "./jpg/productivity1.jpg";
 import productivity2 from "./jpg/productivity2.jpg";
 import productivity3 from "./jpg/productivity3.jpg";
@@ -433,4 +438,24 @@ export const ICON_MEMBERSHIP: IImage = {
 export const INSTAGRAM: IImage = {
   img: instagram,
   alt: "instagram icon",
+};
+
+export const INSTAGRAMPhoto1: IImage = {
+  img: IGImage1,
+  alt: "instagram photo 1",
+};
+
+export const INSTAGRAMPhoto2: IImage = {
+  img: IGImage2,
+  alt: "instagram photo 2",
+};
+
+export const INSTAGRAMPhoto3: IImage = {
+  img: IGImage3,
+  alt: "instagram photo 3",
+};
+
+export const INSTAGRAMPhoto4: IImage = {
+  img: IGImage4,
+  alt: "instagram photo 4",
 };
