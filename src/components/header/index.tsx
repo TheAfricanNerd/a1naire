@@ -130,7 +130,7 @@ function Header({ reference }: IGallery) {
             {/* BOOK A chauffeur */}
             <Link to={chauffeurLink}>
               <button className="block md:bg-black bg-white hover:bg-slate-900 text-xl md:text-2xl rounded-md mx-auto drop-shadow-sm font-bold p-10 md:px-40 py-3 md:py-5 my-5 md:text-white text-black cursor-pointer md:w-2/3 md:max-w-[70%] w-[90%]">
-                Book a Chauffeur
+                Book a Chauffeur to drive your car
               </button>
             </Link>
 
