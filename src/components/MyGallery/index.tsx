@@ -94,7 +94,7 @@ const MyGallery = ({ reference }: IGallery) => {
 
       <Link to={chauffeurLink}>
         <button className="block bg-black hover:bg-slate-900 text-xl md:text-2xl rounded-md mx-auto drop-shadow-sm font-bold p-10 md:px-40 py-3 md:py-5 my-5 text-white cursor-pointer md:w-[30%] md:max-w-[70%] w-[90%]">
-          Book a Chauffeur to drive your car
+          Book a Chauffeur to drive my car
         </button>
       </Link>
 
