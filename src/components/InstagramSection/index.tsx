@@ -67,7 +67,6 @@ const InstagramSection = () => {
               />
             </Link>
             // </span>
-
             // <div
             //   key={image.id}
             //   className="p-4 w-full border-2 border-red-500"
@@ -75,7 +74,6 @@ const InstagramSection = () => {
             // >
             //   <Link to={image.link} target="_blank" className=" !m-0 !p-0">
             //     <InstagramEmbed igimage={image} width={slideWidth} />
-
             //   </Link>
             // </div>
           ))}

@@ -44,6 +44,9 @@ const MyGallery = ({ reference }: IGallery) => {
   ];
 
   //  ? `https://ride.a1naire.com/register?ref=${reference}`
+
+  const chauffeurLink = `https://a1naire.com/bookchauffeur`;
+
   const regLink = reference
     ? `https://ride.a1naire.com/reservations`
     : `https://ride.a1naire.com/reservations`;
@@ -86,6 +89,12 @@ const MyGallery = ({ reference }: IGallery) => {
       <Link to={regLink}>
         <button className="block bg-black hover:bg-slate-900 text-xl md:text-2xl rounded-md mx-auto drop-shadow-sm font-bold p-10 md:px-40 py-3 md:py-5 my-5 text-white cursor-pointer md:w-[30%] md:max-w-[70%] w-[90%]">
           Book a ride
+        </button>
+      </Link>
+
+      <Link to={chauffeurLink}>
+        <button className="block bg-black hover:bg-slate-900 text-xl md:text-2xl rounded-md mx-auto drop-shadow-sm font-bold p-10 md:px-40 py-3 md:py-5 my-5 text-white cursor-pointer md:w-[30%] md:max-w-[70%] w-[90%]">
+          Book a Chauffeur
         </button>
       </Link>
 

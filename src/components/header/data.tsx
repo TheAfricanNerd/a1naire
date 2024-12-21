@@ -10,7 +10,7 @@ const data: Array<ISlide> = [
   {
     id: 1,
     h2:
-      "The world's most ultra-luxurious vehicles and game changing experiences.",
+      "The world's most ultra-luxurious vehicles, Ultra-Sophisticated Pilots and game changing experiences",
     p: "some Paragraph text",
   },
 ];
