@@ -87,19 +87,19 @@ const MyGallery = ({ reference }: IGallery) => {
       <InstagramSection />
 
       <Link to={regLink}>
-        <button className="block bg-black hover:bg-slate-900 text-xl md:text-2xl rounded-md mx-auto drop-shadow-sm font-bold p-10 md:px-40 py-3 md:py-5 my-5 text-white cursor-pointer md:w-[30%] md:max-w-[70%] w-[90%]">
+        <button className="block bg-black hover:bg-slate-900 text-xl md:text-2xl rounded-md mx-auto drop-shadow-sm font-bold p-5 md:px-5 py-3 md:py-5 my-5 text-white cursor-pointer md:w-[30%] md:max-w-[70%] w-[90%]">
           Book a ride
         </button>
       </Link>
 
       <Link to={chauffeurLink}>
-        <button className="block bg-black hover:bg-slate-900 text-xl md:text-2xl rounded-md mx-auto drop-shadow-sm font-bold p-10 md:px-40 py-3 md:py-5 my-5 text-white cursor-pointer md:w-[30%] md:max-w-[70%] w-[90%]">
+        <button className="block bg-black hover:bg-slate-900 text-xl md:text-2xl rounded-md mx-auto drop-shadow-sm font-bold p-5 md:px-50 py-3 md:py-5 my-5 text-white cursor-pointer md:w-[30%] md:max-w-[70%] w-[90%]">
           Book a Chauffeur to drive my car
         </button>
       </Link>
 
       <Link to={waitlistLink}>
-        <button className="block border-4 border-black  text-xl md:text-2xl rounded-md mx-auto drop-shadow-sm font-bold  md:px-10 py-3 md:py-5 my-5 md:text-black  cursor-pointer md:w-[30%] md:max-w-[70%] w-[90%]">
+        <button className="block border-4 border-black  text-xl md:text-2xl rounded-md mx-auto drop-shadow-sm font-bold  md:px-5 py-3 md:py-5 my-5 md:text-black  cursor-pointer md:w-[30%] md:max-w-[70%] w-[90%]">
           Inquire about membership
         </button>
       </Link>
